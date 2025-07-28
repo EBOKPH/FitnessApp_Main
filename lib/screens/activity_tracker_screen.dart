@@ -395,6 +395,191 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                           ],
                         ),
 
+                        Column(
+                          children: [
+
+                            Padding(
+                              padding: EdgeInsets.only(top: 20.0, left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 40,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFFf8f8f8),
+                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 160,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    colors: [Color(0xFFb9adfa), Color(0xFFb4befd)],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                  ),
+                                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 20.0),
+                              child: Text("Thu",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+                        Column(
+                          children: [
+
+                            Padding(
+                              padding: EdgeInsets.only(top: 20.0, left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 160,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFFf8f8f8),
+                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 40,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    colors: [Color(0XFFD694E5), Color(0XFFD495E5)],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                  ),
+                                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 20.0),
+                              child: Text("Fri",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+                        Column(
+                          children: [
+
+                            Padding(
+                              padding: EdgeInsets.only(top: 20.0, left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 60,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFFf8f8f8),
+                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 140,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    colors: [Color(0xFFb9adfa), Color(0xFFb4befd)],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                  ),
+                                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 20.0),
+                              child: Text("Sat",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+
+                        Column(
+                          children: [
+
+                            Padding(
+                              padding: EdgeInsets.only(top: 20.0, left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 120,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFFf8f8f8),
+                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 80,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    colors: [Color(0XFFD694E5), Color(0XFFD495E5)],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                  ),
+                                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 20.0),
+                              child: Text("Sun",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+
                       ],
                     ),
                   ),
