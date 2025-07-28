@@ -249,6 +249,20 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                 ),
 
                 Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Material(
+                    elevation: 3,
+                    child: Container(
+                        decoration: BoxDecoration(
+                          //borderRadius: BorderRadius.circular(20.0),
+                          color: Colors.blue[200],
+                        ),
+                      child: Text("data"),
+                    ),
+                  ),
+                ),
+
+                Padding(
                   padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0,),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
