@@ -264,7 +264,7 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                               padding: EdgeInsets.only(top: 20.0, left: 20.0),
                               child: Container(
                                 width: 30,
-                                height: 160,
+                                height: 50,
                                 decoration: BoxDecoration(
                                   color: Color(0xFFf8f8f8),
                                   borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20),),
@@ -275,10 +275,10 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                               padding: EdgeInsets.only(left: 20.0),
                               child: Container(
                                 width: 30,
-                                height: 40,
+                                height: 150,
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
-                                    colors: [Color(0xFFb9adfa), Color(0xFFb4befd)],
+                                    colors: [Color(0XFFD694E5), Color(0XFFD495E5)],
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight,
                                   ),
@@ -310,7 +310,7 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                               padding: EdgeInsets.only(top: 20.0, left: 20.0),
                               child: Container(
                                 width: 30,
-                                height: 50,
+                                height: 110,
                                 decoration: BoxDecoration(
                                   color: Color(0xFFf8f8f8),
                                   borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20),),
@@ -321,7 +321,53 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                               padding: EdgeInsets.only(left: 20.0),
                               child: Container(
                                 width: 30,
-                                height: 150,
+                                height: 90,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    colors: [Color(0xFFb9adfa), Color(0xFFb4befd)],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                  ),
+                                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 20.0),
+                              child: Text("Tue",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+                        Column(
+                          children: [
+
+                            Padding(
+                              padding: EdgeInsets.only(top: 20.0, left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 70,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFFf8f8f8),
+                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20),),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.0),
+                              child: Container(
+                                width: 30,
+                                height: 130,
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
                                     colors: [Color(0XFFD694E5), Color(0XFFD495E5)],
@@ -335,7 +381,7 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
 
                             Padding(
                               padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 20.0),
-                              child: Text("Tue",
+                              child: Text("Wed",
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(
                                     fontSize: 14,
