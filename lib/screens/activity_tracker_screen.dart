@@ -289,7 +289,7 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
 
                             Padding(
                               padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 20.0),
-                              child: Text("Mon",
+                              child: Text("Mon d",
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(
                                       fontSize: 14,
