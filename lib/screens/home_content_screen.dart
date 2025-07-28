@@ -836,7 +836,6 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
                                         width: 125,
                                         height: 15,
                                         decoration: BoxDecoration(
-                                          //color: Color(0xFFf8f8f8),
                                           color: Colors.blue,
                                           borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
                                         ),
@@ -948,7 +947,6 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
                                         width: 75,
                                         height: 15,
                                         decoration: BoxDecoration(
-                                          //color: Color(0xFFf8f8f8),
                                           color: Colors.blue,
                                           borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
                                         ),
@@ -1061,7 +1059,6 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
                                         width: 105,
                                         height: 15,
                                         decoration: BoxDecoration(
-                                          //color: Color(0xFFf8f8f8),
                                           color: Colors.blue,
                                           borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
                                         ),
@@ -1174,7 +1171,6 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
                                         width: 55,
                                         height: 15,
                                         decoration: BoxDecoration(
-                                          //color: Color(0xFFf8f8f8),
                                           color: Colors.blue,
                                           borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
                                         ),

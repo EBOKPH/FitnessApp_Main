@@ -68,7 +68,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(20.0),
                         color: Colors.grey[200],
                       ),
                       child: Padding(
@@ -137,7 +137,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(20.0),
                         color: Colors.grey[200],
                       ),
                       child: Padding(
@@ -206,7 +206,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(20.0),
                         color: Colors.grey[200],
                       ),
                       child: Padding(
@@ -276,7 +276,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                     padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(20.0),
                         color: Colors.grey[200],
                       ),
                       child: Padding(
@@ -345,7 +345,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
-                      borderRadius: BorderRadius.circular(40.0),
+                      borderRadius: BorderRadius.circular(30.0),
                     ),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(

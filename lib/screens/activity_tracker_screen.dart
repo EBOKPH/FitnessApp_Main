@@ -755,14 +755,6 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
 
                 ),
 
-
-
-
-
-
-
-
-
               ],
             ),
           ),

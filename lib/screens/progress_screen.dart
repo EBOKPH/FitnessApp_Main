@@ -79,7 +79,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                             height: 70,
                             decoration: BoxDecoration(
                               color: Color(0xFFFFF9F9),
-                              borderRadius: BorderRadius.circular(36.0), // Rounded corners
+                              borderRadius: BorderRadius.circular(36.0),
                             ),
                             child: Icon(
                                 Icons.calendar_month_rounded,
