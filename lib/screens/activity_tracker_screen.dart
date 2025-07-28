@@ -249,15 +249,54 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                 ),
 
                 Padding(
-                  padding: EdgeInsets.all(20.0),
+                  padding: EdgeInsets.all(10.0),
                   child: Material(
-                    elevation: 3,
+                    elevation: 1,
+                    borderRadius: BorderRadius.circular(30.0),
                     child: Container(
                         decoration: BoxDecoration(
-                          //borderRadius: BorderRadius.circular(20.0),
-                          color: Colors.blue[200],
+                          color: Colors.white,
                         ),
-                      child: Text("data"),
+                      child: Row(
+                        children: [
+
+                          Column(
+                            children: [
+
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+                                child: Container(
+                                  width: 35,
+                                  height: 200,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFFf8f8f8),
+                                    borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20),),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(20, 0, 20, 20),
+                                child: Container(
+                                  width: 35,
+                                  height: 200,
+                                  decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                      colors: [Color(0xFFb9adfa), Color(0xFFb4befd)],
+                                      begin: Alignment.topLeft,
+                                      end: Alignment.bottomRight,
+                                    ),
+                                    borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20),),
+                                  ),
+                                ),
+                              ),
+
+                              Text("data"),
+
+                            ],
+                          ),
+
+                        ],
+                      ),
                     ),
                   ),
                 ),
