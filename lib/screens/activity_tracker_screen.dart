@@ -634,30 +634,107 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                                     size: 46.0
                                 ),
                               ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                              Padding(
+                                padding: EdgeInsets.only(left: 10.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
 
-                                  Text("Drinking 300ml Water",
-                                    style: GoogleFonts.poppins(
-                                      textStyle: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.black
+                                    Text("Drinking 300ml Water",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Text("About 3 minutes ago",
-                                    style: GoogleFonts.poppins(
-                                      textStyle: TextStyle(
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.grey
+                                    Text("About 3 minutes ago",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.grey
+                                        ),
                                       ),
                                     ),
-                                  ),
 
-                                ],
+                                  ],
+                                ),
+                              ),
+
+                            ],
+                          ),
+
+                          Padding(
+                            padding: EdgeInsets.only(bottom: 30.0),
+                            child: Icon(
+                              Icons.more_vert_rounded,
+                              color: Colors.grey,
+                            ),
+                          ),
+
+                        ],
+                      ),
+                    ),
+                  ),
+
+                ),
+
+                Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Material(
+                    elevation: 3,
+                    borderRadius: BorderRadius.circular(10.0),
+                    color: Colors.white,
+                    child: Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+
+                          Row(
+                            children: [
+
+                              Container(
+                                width: 65,
+                                height: 65,
+                                decoration: BoxDecoration(
+                                  color: Color(0XFFE9F0FF),
+                                  borderRadius: BorderRadius.circular(44.0),
+                                ),
+                                child: Icon(
+                                    Icons.person_3_rounded,
+                                    size: 46.0
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 10.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+
+                                    Text("Eat Snack(Fitbar)",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black
+                                        ),
+                                      ),
+                                    ),
+                                    Text("About 10 minutes ago",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
                               ),
 
                             ],
@@ -679,40 +756,12 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                 ),
 
 
-                Padding(
-                  padding: EdgeInsets.only(top: 40.0),
-                    child: Text("data"),
-                ),
 
 
-                Padding(
-                  padding: EdgeInsets.only(top: 40.0),
-                  child: Text("data"),
-                ),
 
 
-                Padding(
-                  padding: EdgeInsets.only(top: 40.0),
-                  child: Text("data"),
-                ),
 
 
-                Padding(
-                  padding: EdgeInsets.only(top: 40.0),
-                  child: Text("data"),
-                ),
-
-
-                Padding(
-                  padding: EdgeInsets.only(top: 40.0),
-                  child: Text("data"),
-                ),
-
-
-                Padding(
-                  padding: EdgeInsets.only(top: 40.0),
-                  child: Text("data"),
-                ),
 
               ],
             ),
