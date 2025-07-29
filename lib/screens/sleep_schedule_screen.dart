@@ -10,7 +10,7 @@ class SleepScheduleScreen extends StatefulWidget {
 
 class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
 
-  final double progress = 0.96; // 👈 manually set progress here (0.0 to 1.0)
+  final double progress = 0.96;
 
   @override
   Widget build(BuildContext context) {
@@ -762,14 +762,14 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
           ),
       ),
 
-      /*floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Color(0XFFDF9BDF),
         child: Icon(
           Icons.add,
           color: Colors.white,
         ),
-      ),*/
+      ),
 
     );
   }
