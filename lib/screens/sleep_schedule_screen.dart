@@ -9,6 +9,9 @@ class SleepScheduleScreen extends StatefulWidget {
 }
 
 class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
+
+  final double progress = 0.96; // 👈 manually set progress here (0.0 to 1.0)
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -636,66 +639,50 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                       borderRadius: BorderRadius.circular(26.0),
                     ),
                     width: double.infinity,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
 
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                        Row(
                           children: [
 
-                            Row(
-                              children: [
-
-                                Text("You will get ",
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.black
-                                    ),
-                                  ),
+                            Text("You will get ",
+                              style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black
                                 ),
-                                Text("8",
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w800,
-                                        color: Colors.black
-                                    ),
-                                  ),
-                                ),
-                                Text("hours ",
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.black
-                                    ),
-                                  ),
-                                ),
-                                Text("10",
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w800,
-                                        color: Colors.black
-                                    ),
-                                  ),
-                                ),
-                                Text("minutes",
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.black
-                                    ),
-                                  ),
-                                ),
-
-                              ],
+                              ),
                             ),
-                            Text("for tonight",
+                            Text("8",
+                              style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w800,
+                                    color: Colors.black
+                                ),
+                              ),
+                            ),
+                            Text("hours ",
+                              style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black
+                                ),
+                              ),
+                            ),
+                            Text("10",
+                              style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w800,
+                                    color: Colors.black
+                                ),
+                              ),
+                            ),
+                            Text("minutes",
                               style: GoogleFonts.poppins(
                                 textStyle: TextStyle(
                                     fontSize: 14,
@@ -705,9 +692,57 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                               ),
                             ),
 
-                            //fefeefjkrgnrjngjrng
-
                           ],
+                        ),
+                        Text("for tonight",
+                          style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.black
+                            ),
+                          ),
+                        ),
+
+                        Container(
+                          margin: EdgeInsets.only(top: 10),
+                          height: 25.0,
+                          width: double.infinity,
+                          child: Stack(
+                            alignment: Alignment.center,
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  height: 25.0,
+                                  width: double.infinity,
+                                  color: Colors.grey[300],
+                                ),
+                              ),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(20),
+                                child: FractionallySizedBox(
+                                  alignment: Alignment.centerLeft,
+                                  widthFactor: progress,
+                                  child: Container(
+                                    height: 25.0,
+                                    decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                        colors: [Colors.pinkAccent, Colors.purpleAccent],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                '${(progress * 100).toInt()}%',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
 
                       ],
@@ -718,6 +753,15 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
               ],
             ),
           ),
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Color(0XFFDF9BDF),
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
       ),
 
     );
