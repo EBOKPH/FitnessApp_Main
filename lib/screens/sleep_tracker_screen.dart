@@ -121,7 +121,7 @@ class _SleepTrackerScreenState extends State<SleepTrackerScreen> {
                 ),
 
                 Padding(
-                  padding: EdgeInsets.all(20.0),
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
                   child: Container(
                     height: 200,
                     width: double.infinity,
@@ -179,6 +179,75 @@ class _SleepTrackerScreenState extends State<SleepTrackerScreen> {
                     ),
                   ),
                 ),
+
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                  child: Container(
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFE9F0FF),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                          child: Text("Daily Sleep Schedule",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+                          child: ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                            ),
+                            onPressed: () {},
+                            child: Text("Check",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+                ),
+
+
+
+
+
+
+
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+                    child: Text("Today Schedule",
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+
+
+
+
+
+
 
               ],
             ),
