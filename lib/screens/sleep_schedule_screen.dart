@@ -626,7 +626,93 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                       ),
                     ),
                   ),
+                ),
 
+                Padding(
+                  padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFF5E9FB),
+                      borderRadius: BorderRadius.circular(26.0),
+                    ),
+                    width: double.infinity,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+
+                            Row(
+                              children: [
+
+                                Text("You will get ",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.black
+                                    ),
+                                  ),
+                                ),
+                                Text("8",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w800,
+                                        color: Colors.black
+                                    ),
+                                  ),
+                                ),
+                                Text("hours ",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.black
+                                    ),
+                                  ),
+                                ),
+                                Text("10",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w800,
+                                        color: Colors.black
+                                    ),
+                                  ),
+                                ),
+                                Text("minutes",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.black
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                            Text("for tonight",
+                              style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black
+                                ),
+                              ),
+                            ),
+
+                            //fefeefjkrgnrjngjrng
+
+                          ],
+                        ),
+
+                      ],
+                    ),
+                  ),
                 ),
 
               ],
