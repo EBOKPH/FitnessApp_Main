@@ -678,7 +678,6 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                       ),
                     ),
                   ),
-
                 ),
 
                 Padding(
@@ -752,7 +751,6 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                       ),
                     ),
                   ),
-
                 ),
 
               ],
