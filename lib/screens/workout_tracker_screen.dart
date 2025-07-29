@@ -159,29 +159,32 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
                   ),
                 ),
 
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
 
-                    Padding(
-                      padding: EdgeInsets.only(left: 20.0),
-                      child: Text("Gallery",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                      Padding(
+                        padding: EdgeInsets.only(left: 26.0),
+                        child: Text("Upcoming Workout",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(right: 20.0),
-                      child: Text("See more",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Color(0XFFC7C7C7),
+                      Padding(
+                        padding: EdgeInsets.only(right: 26.0),
+                        child: Text("See more",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Color(0XFFC7C7C7),
+                          ),
                         ),
                       ),
-                    ),
 
-                  ],
+                    ],
+                  ),
                 ),
 
               ],
