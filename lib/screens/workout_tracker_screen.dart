@@ -119,6 +119,71 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                  child: Container(
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFE9F0FF),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                          child: Text("Daily Workout Schedule",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+                          child: ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                            ),
+                            onPressed: () {},
+                            child: Text("Check",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+                ),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+
+                    Padding(
+                      padding: EdgeInsets.only(left: 20.0),
+                      child: Text("Gallery",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(right: 20.0),
+                      child: Text("See more",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color(0XFFC7C7C7),
+                        ),
+                      ),
+                    ),
+
+                  ],
+                ),
+
               ],
             ),
           ),
