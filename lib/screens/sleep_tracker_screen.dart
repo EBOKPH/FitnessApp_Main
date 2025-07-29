@@ -67,6 +67,9 @@ class _SleepTrackerScreenState extends State<SleepTrackerScreen> {
             ),
           ),
         ],
+
+        backgroundColor: Colors.white,
+
       ),
 
       body: SafeArea(
@@ -220,16 +223,10 @@ class _SleepTrackerScreenState extends State<SleepTrackerScreen> {
                   ),
                 ),
 
-
-
-
-
-
-
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+                    padding: EdgeInsets.fromLTRB(20.0, 20.0, 0.0, 0.0),
                     child: Text("Today Schedule",
                       style: GoogleFonts.poppins(
                         textStyle: TextStyle(
@@ -242,12 +239,201 @@ class _SleepTrackerScreenState extends State<SleepTrackerScreen> {
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                  child: Material(
+                    elevation: 3,
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.white,
+                    child: Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
 
+                          Row(
+                            children: [
 
+                              Container(
+                                width: 65,
+                                height: 65,
+                                decoration: BoxDecoration(
+                                  color: Color(0XFFE9F0FF),
+                                  borderRadius: BorderRadius.circular(44.0),
+                                ),
+                                child: Icon(
+                                    Icons.bed_rounded,
+                                    size: 46.0
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 10.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
 
+                                    Row(
+                                      children: [
 
+                                        Text("Bedtime, ",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.black
+                                            ),
+                                          ),
+                                        ),
+                                        Text("09:00pm",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey
+                                            ),
+                                          ),
+                                        ),
 
+                                      ],
+                                    ),
+                                    Text("in 6hours 22minutes",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
 
+                                  ],
+                                ),
+                              ),
+
+                            ],
+                          ),
+
+                          Column(
+                            children: [
+
+                              Padding(
+                                padding: EdgeInsets.only(left: 40.0, bottom: 10.0),
+                                child: Icon(
+                                  Icons.more_vert_rounded,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Switch(
+                                value: true,
+                                onChanged: (value) {},
+                              ),
+
+                            ],
+                          ),
+
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0, bottom: 20.0),
+                  child: Material(
+                    elevation: 3,
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.white,
+                    child: Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+
+                          Row(
+                            children: [
+
+                              Container(
+                                width: 65,
+                                height: 65,
+                                decoration: BoxDecoration(
+                                  color: Color(0XFFE9F0FF),
+                                  borderRadius: BorderRadius.circular(44.0),
+                                ),
+                                child: Icon(
+                                    Icons.alarm_add_rounded,
+                                    size: 46.0
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 10.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+
+                                    Row(
+                                      children: [
+
+                                        Text("Alarm, ",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.black
+                                            ),
+                                          ),
+                                        ),
+                                        Text("05:10am",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey
+                                            ),
+                                          ),
+                                        ),
+
+                                      ],
+                                    ),
+                                    Text("in 14hours 30minutes",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+
+                            ],
+                          ),
+
+                          Column(
+                            children: [
+
+                              Padding(
+                                padding: EdgeInsets.only(left: 40.0, bottom: 10.0),
+                                child: Icon(
+                                  Icons.more_vert_rounded,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Switch(
+                                value: true,
+                                onChanged: (value) {},
+                              ),
+
+                            ],
+                          ),
+
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
 
               ],
             ),

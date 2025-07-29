@@ -438,7 +438,7 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                   padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
                   child: Material(
                     elevation: 3,
-                    borderRadius: BorderRadius.circular(10.0),
+                    borderRadius: BorderRadius.circular(20.0),
                     color: Colors.white,
                     child: Padding(
                       padding: EdgeInsets.all(12.0),
@@ -537,7 +537,7 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                   padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
                   child: Material(
                     elevation: 3,
-                    borderRadius: BorderRadius.circular(10.0),
+                    borderRadius: BorderRadius.circular(20.0),
                     color: Colors.white,
                     child: Padding(
                       padding: EdgeInsets.all(12.0),
