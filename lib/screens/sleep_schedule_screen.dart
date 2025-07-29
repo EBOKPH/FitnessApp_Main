@@ -454,7 +454,7 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                                   borderRadius: BorderRadius.circular(44.0),
                                 ),
                                 child: Icon(
-                                    Icons.person,
+                                    Icons.bed_rounded,
                                     size: 46.0
                                 ),
                               ),
@@ -464,16 +464,31 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
 
-                                    Text("Drinking 300ml Water",
-                                      style: GoogleFonts.poppins(
-                                        textStyle: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.black
+                                    Row(
+                                      children: [
+
+                                        Text("Bedtime, ",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.black
+                                            ),
+                                          ),
                                         ),
-                                      ),
+                                        Text("09:00pm",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey
+                                            ),
+                                          ),
+                                        ),
+
+                                      ],
                                     ),
-                                    Text("About 3 minutes ago",
+                                    Text("in 6hours 22minutes",
                                       style: GoogleFonts.poppins(
                                         textStyle: TextStyle(
                                             fontSize: 12,
@@ -490,12 +505,121 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                             ],
                           ),
 
-                          Padding(
-                            padding: EdgeInsets.only(bottom: 30.0),
-                            child: Icon(
-                              Icons.more_vert_rounded,
-                              color: Colors.grey,
-                            ),
+                          Column(
+                            children: [
+
+                              Padding(
+                                padding: EdgeInsets.only(left: 40.0, bottom: 10.0),
+                                child: Icon(
+                                  Icons.more_vert_rounded,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Switch(
+                                  value: true,
+                                  onChanged: (value) {},
+                              ),
+
+                            ],
+                          ),
+
+                        ],
+                      ),
+                    ),
+                  ),
+
+                ),
+
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                  child: Material(
+                    elevation: 3,
+                    borderRadius: BorderRadius.circular(10.0),
+                    color: Colors.white,
+                    child: Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+
+                          Row(
+                            children: [
+
+                              Container(
+                                width: 65,
+                                height: 65,
+                                decoration: BoxDecoration(
+                                  color: Color(0XFFE9F0FF),
+                                  borderRadius: BorderRadius.circular(44.0),
+                                ),
+                                child: Icon(
+                                    Icons.alarm_add_rounded,
+                                    size: 46.0
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 10.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+
+                                    Row(
+                                      children: [
+
+                                        Text("Alarm, ",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.black
+                                            ),
+                                          ),
+                                        ),
+                                        Text("05:10am",
+                                          style: GoogleFonts.poppins(
+                                            textStyle: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey
+                                            ),
+                                          ),
+                                        ),
+
+                                      ],
+                                    ),
+                                    Text("in 14hours 30minutes",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+
+                            ],
+                          ),
+
+                          Column(
+                            children: [
+
+                              Padding(
+                                padding: EdgeInsets.only(left: 40.0, bottom: 10.0),
+                                child: Icon(
+                                  Icons.more_vert_rounded,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Switch(
+                                value: true,
+                                onChanged: (value) {},
+                              ),
+
+                            ],
                           ),
 
                         ],
