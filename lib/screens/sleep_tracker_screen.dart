@@ -1,6 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
 
 class SleepTrackerScreen extends StatefulWidget {
   const SleepTrackerScreen({super.key});
@@ -10,6 +11,17 @@ class SleepTrackerScreen extends StatefulWidget {
 }
 
 class _SleepTrackerScreenState extends State<SleepTrackerScreen> {
+
+  List<Map<String, double>> chartData = [
+    {'x': 0, 'y': 75},
+    {'x': 1, 'y': 78},
+    {'x': 2, 'y': 72},
+    {'x': 3, 'y': 80},
+    {'x': 4, 'y': 74},
+    {'x': 5, 'y': 79},
+    {'x': 6, 'y': 77},
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,6 +116,66 @@ class _SleepTrackerScreenState extends State<SleepTrackerScreen> {
                           ),
                         ],
                       ),
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Container(
+                    height: 200,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF9ABEFD),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(30, 30, 0, 0),
+                          child: Text("Last Night Sleep",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+                          child: Text("8h 20m",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(
+                          height: 100,
+                          child: SfCartesianChart(
+                            backgroundColor: Colors.transparent,
+                            plotAreaBorderWidth: 0,
+                            primaryXAxis: NumericAxis(isVisible: false),
+                            primaryYAxis: NumericAxis(isVisible: false),
+                            margin: EdgeInsets.zero,
+                            series: <FastLineSeries<Map<String, double>, double>>[
+                              FastLineSeries<Map<String, double>, double>(
+                                dataSource: chartData,
+                                xValueMapper: (data, _) => data['x']!,
+                                yValueMapper: (data, _) => data['y']!,
+                                color: Colors.purpleAccent,
+                                width: 2,
+                                markerSettings: MarkerSettings(isVisible: false),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                      ],
                     ),
                   ),
                 ),
