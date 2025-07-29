@@ -639,113 +639,120 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                       borderRadius: BorderRadius.circular(26.0),
                     ),
                     width: double.infinity,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                    child: Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 30.0, 20.0, 30.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
 
-                        Row(
-                          children: [
+                          Row(
+                            children: [
 
-                            Text("You will get ",
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.black
+                              Text("You will get ",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.black
+                                  ),
                                 ),
                               ),
-                            ),
-                            Text("8",
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w800,
-                                    color: Colors.black
+                              Text("8",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w800,
+                                      color: Colors.black
+                                  ),
                                 ),
                               ),
-                            ),
-                            Text("hours ",
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.black
+                              Text("hours ",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.black
+                                  ),
                                 ),
                               ),
-                            ),
-                            Text("10",
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w800,
-                                    color: Colors.black
+                              Text("10",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w800,
+                                      color: Colors.black
+                                  ),
                                 ),
                               ),
-                            ),
-                            Text("minutes",
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.black
+                              Text("minutes",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.black
+                                  ),
                                 ),
                               ),
-                            ),
 
-                          ],
-                        ),
-                        Text("for tonight",
-                          style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.black
+                            ],
+                          ),
+                          Text("for tonight",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black
+                              ),
                             ),
                           ),
-                        ),
 
-                        Container(
-                          margin: EdgeInsets.only(top: 10),
-                          height: 25.0,
-                          width: double.infinity,
-                          child: Stack(
-                            alignment: Alignment.center,
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: Container(
-                                  height: 25.0,
-                                  width: double.infinity,
-                                  color: Colors.grey[300],
-                                ),
-                              ),
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: FractionallySizedBox(
-                                  alignment: Alignment.centerLeft,
-                                  widthFactor: progress,
+                          SizedBox(
+                            height: 10.0,
+                          ),
+
+                          Container(
+                            margin: EdgeInsets.only(top: 10),
+                            height: 25.0,
+                            width: double.infinity,
+                            child: Stack(
+                              alignment: Alignment.center,
+                              children: [
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(20),
                                   child: Container(
                                     height: 25.0,
-                                    decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                        colors: [Colors.pinkAccent, Colors.purpleAccent],
+                                    width: double.infinity,
+                                    color: Colors.grey[300],
+                                  ),
+                                ),
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(20),
+                                  child: FractionallySizedBox(
+                                    alignment: Alignment.centerLeft,
+                                    widthFactor: progress,
+                                    child: Container(
+                                      height: 25.0,
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [Colors.pinkAccent, Colors.purpleAccent],
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              Text(
-                                '${(progress * 100).toInt()}%',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
+                                Text(
+                                  '${(progress * 100).toInt()}%',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -755,14 +762,14 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
           ),
       ),
 
-      floatingActionButton: FloatingActionButton(
+      /*floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Color(0XFFDF9BDF),
         child: Icon(
           Icons.add,
           color: Colors.white,
         ),
-      ),
+      ),*/
 
     );
   }
