@@ -130,8 +130,8 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: EdgeInsets.only(left: 20.0),
-                    child: Text("A dlnnadnifandifl",
+                    padding: EdgeInsets.only(left: 20.0, right: 20.0),
+                    child: Text("A jumping jack, also known as a star jump and called a side-straddle hop in the US military, is a physical jumping exercise performed by jumping to a position with the legs spread wide.",
                       style: GoogleFonts.poppins(
                         textStyle: TextStyle(
                             fontSize: 14,
@@ -140,6 +140,36 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                         ),
                       ),
                     ),
+                  ),
+                ),
+
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+
+                      Text("How To Do It",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black
+                          ),
+                        ),
+                      ),
+
+                      Text("4 Steps",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.grey
+                          ),
+                        ),
+                      ),
+
+                    ],
                   ),
                 ),
 
