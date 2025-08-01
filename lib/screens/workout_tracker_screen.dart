@@ -55,25 +55,22 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
         actions: [
           Padding(
             padding: EdgeInsets.only(right: 16.0),
-            child: InkWell(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade300,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.more_horiz_rounded, color: Colors.black,),
-                ),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey.shade300,
+                borderRadius: BorderRadius.circular(12),
               ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => WorkoutTrackerScreen1(),
-                  ),
-                );
-              },
+              child: IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => WorkoutTrackerScreen1(),
+                    ),
+                  );
+                },
+                icon: Icon(Icons.more_horiz_rounded, color: Colors.black,),
+              ),
             ),
           ),
         ],
