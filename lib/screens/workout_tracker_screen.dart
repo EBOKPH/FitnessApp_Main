@@ -1,3 +1,4 @@
+import 'package:fitnestx/screens/workout_tracker_screen1.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -54,15 +55,25 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
         actions: [
           Padding(
             padding: EdgeInsets.only(right: 16.0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.grey.shade300,
-                borderRadius: BorderRadius.circular(12),
+            child: InkWell(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade300,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.more_horiz_rounded, color: Colors.black,),
+                ),
               ),
-              child: IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.more_horiz_rounded, color: Colors.black,),
-              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => WorkoutTrackerScreen1(),
+                  ),
+                );
+              },
             ),
           ),
         ],
