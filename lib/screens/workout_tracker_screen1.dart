@@ -94,8 +94,44 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: EdgeInsets.only(left: 20.0),
+                    padding: EdgeInsets.only(left: 20.0, top: 5.0),
                     child: Text("Easy | 390 Calories Burn",
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.grey
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 20.0, top: 30.0),
+                    child: Text("Descriptions",
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+                SizedBox(
+                  height: 10.0,
+                ),
+
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 20.0),
+                    child: Text("A dlnnadnifandifl",
                       style: GoogleFonts.poppins(
                         textStyle: TextStyle(
                             fontSize: 14,
