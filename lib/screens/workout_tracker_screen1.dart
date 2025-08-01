@@ -70,16 +70,42 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                 Center(
                     child: Image.asset("assets/images/Image8.png"),
                 ),
-                
-                Text("Workout Tracker",
-                  style: GoogleFonts.poppins(
-                    textStyle: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black
+
+                SizedBox(
+                  height: 30.0,
+                ),
+
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 20.0),
+                    child: Text("Jumping Jack",
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black
+                        ),
+                      ),
                     ),
                   ),
-                )
+                ),
+
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 20.0),
+                    child: Text("Easy | 390 Calories Burn",
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.grey
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
 
               ],
             ),
