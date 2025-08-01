@@ -173,6 +173,22 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                   ),
                 ),
 
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 20.0, top: 20.0),
+                    child: Text("Custom Repetitions",
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
               ],
             ),
           ),
