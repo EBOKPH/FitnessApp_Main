@@ -426,6 +426,164 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFEAEEFF),
+                      borderRadius: BorderRadius.circular(26.0),
+                    ),
+                    width: double.infinity,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        Padding(
+                          padding: EdgeInsets.all(20.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+
+                              Text("Lowerbody Workout",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+
+                              Text("12 Excercises | 40mins",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.grey
+                                  ),
+                                ),
+                              ),
+
+                              Padding(
+                                padding: EdgeInsets.only(top: 20.0),
+                                child: ElevatedButton(
+                                  style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                                  ),
+                                  onPressed: () {},
+                                  child: Text("View More",
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0.0, 16.0, 20.0, 16.0),
+                          child: Container(
+                            width: 90,
+                            height: 90,
+                            decoration: BoxDecoration(
+                              color: Color(0xFFFFF9F9),
+                              borderRadius: BorderRadius.circular(44.0),
+                            ),
+                            child: Icon(
+                                Icons.sports_gymnastics,
+                                size: 48.0
+                            ),
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFEAEEFF),
+                      borderRadius: BorderRadius.circular(26.0),
+                    ),
+                    width: double.infinity,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        Padding(
+                          padding: EdgeInsets.all(20.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+
+                              Text("AB Workout",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+
+                              Text("14 Excercises | 20mins",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.grey
+                                  ),
+                                ),
+                              ),
+
+                              Padding(
+                                padding: EdgeInsets.only(top: 20.0),
+                                child: ElevatedButton(
+                                  style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                                  ),
+                                  onPressed: () {},
+                                  child: Text("View More",
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0.0, 16.0, 20.0, 16.0),
+                          child: Container(
+                            width: 90,
+                            height: 90,
+                            decoration: BoxDecoration(
+                              color: Color(0xFFFFF9F9),
+                              borderRadius: BorderRadius.circular(44.0),
+                            ),
+                            child: Icon(
+                                Icons.sports_gymnastics,
+                                size: 48.0
+                            ),
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+                ),
+
               ],
             ),
           ),
