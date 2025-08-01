@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WorkoutTrackerScreen1 extends StatefulWidget {
   const WorkoutTrackerScreen1({super.key});
@@ -66,7 +67,19 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
             child: Column(
               children: [
 
-                Image.asset("assets/images/Image8.png"),
+                Center(
+                    child: Image.asset("assets/images/Image8.png"),
+                ),
+                
+                Text("Workout Tracker",
+                  style: GoogleFonts.poppins(
+                    textStyle: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black
+                    ),
+                  ),
+                )
 
               ],
             ),
