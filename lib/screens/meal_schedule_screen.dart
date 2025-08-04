@@ -398,73 +398,83 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                   ),
                 ),
 
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
 
-                    Row(
-                      children: [
+                      Row(
+                        children: [
 
-                        Container(
-                          width: 60,
-                          height: 60,
-                          decoration: BoxDecoration(
-                            color: Color(0XFFEBF2Fd),
-                            borderRadius: BorderRadius.circular(10),
+                          Container(
+                            width: 60,
+                            height: 60,
+                            decoration: BoxDecoration(
+                              color: Color(0XFFEBF2Fd),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Icon(
+                              Icons.cake_outlined,
+                              size: 40,
+                            ),
                           ),
-                          child: Icon(
-                            Icons.cake_outlined,
-                            size: 40,
+
+                          Padding(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+
+                                Text("Honey Pancake",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.black
+                                    ),
+                                  ),
+                                ),
+
+                                SizedBox(
+                                  height: 3.0,
+                                ),
+
+                                Text("07:00am",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.grey
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+
+                        ],
+                      ),
+
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 2.0,
                           ),
                         ),
-
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-
-                            Text("Honey Pancake",
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w700,
-                                    color: Colors.black
-                                ),
-                              ),
-                            ),
-
-                            Text("07:00am",
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.grey
-                                ),
-                              ),
-                            ),
-
-                          ],
-                        ),
-
-                      ],
-                    ),
-
-                    Container(
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
+                        padding: EdgeInsets.all(2.0),
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
                           color: Colors.grey,
-                          width: 2.0,
+                          size: 15,
                         ),
                       ),
-                      padding: EdgeInsets.all(3.0),
-                      child: Icon(
-                        Icons.arrow_forward_ios_rounded,
-                        color: Colors.grey,
-                        size: 20,
-                      ),
-                    ),
 
-                  ],
+                    ],
+                  ),
                 ),
 
               ],
