@@ -368,6 +368,36 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+
+                      Text("Breakfast",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black
+                          ),
+                        ),
+                      ),
+
+                      Text("2 meals | 230 calories",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.grey
+                          ),
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),
+
               ],
             ),
           ),
