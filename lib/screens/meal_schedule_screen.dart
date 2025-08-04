@@ -419,10 +419,28 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                         ),
 
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
 
-                            Text("data"),
-                            Text("data"),
+                            Text("Honey Pancake",
+                              style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.black
+                                ),
+                              ),
+                            ),
+
+                            Text("07:00am",
+                              style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.grey
+                                ),
+                              ),
+                            ),
 
                           ],
                         ),
@@ -430,7 +448,20 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                       ],
                     ),
 
-                    Text("data"),
+                    Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.black, // Border color
+                          width: 2.0,          // Border width
+                        ),
+                      ),
+                      padding: EdgeInsets.all(12.0), // Space inside the circle
+                      child: Icon(
+                        Icons.arrow_forward_ios_rounded,
+                        color: Colors.black,
+                      ),
+                    ),
 
                   ],
                 ),
