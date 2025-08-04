@@ -398,6 +398,43 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                   ),
                 ),
 
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+
+                    Row(
+                      children: [
+
+                        Container(
+                          width: 60,
+                          height: 60,
+                          decoration: BoxDecoration(
+                            color: Color(0XFFEBF2Fd),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Icon(
+                            Icons.cake_outlined,
+                            size: 40,
+                          ),
+                        ),
+
+                        Column(
+                          children: [
+
+                            Text("data"),
+                            Text("data"),
+
+                          ],
+                        ),
+
+                      ],
+                    ),
+
+                    Text("data"),
+
+                  ],
+                ),
+
               ],
             ),
           ),
