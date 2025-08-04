@@ -452,14 +452,15 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: Colors.black, // Border color
-                          width: 2.0,          // Border width
+                          color: Colors.grey,
+                          width: 2.0,
                         ),
                       ),
-                      padding: EdgeInsets.all(12.0), // Space inside the circle
+                      padding: EdgeInsets.all(3.0),
                       child: Icon(
                         Icons.arrow_forward_ios_rounded,
-                        color: Colors.black,
+                        color: Colors.grey,
+                        size: 20,
                       ),
                     ),
 
