@@ -556,6 +556,194 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 30.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+
+                      Text("Lunch",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black
+                          ),
+                        ),
+                      ),
+
+                      Text("2 meals | 500 calories",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.grey
+                          ),
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),
+
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+
+                      Row(
+                        children: [
+
+                          Container(
+                            width: 60,
+                            height: 60,
+                            decoration: BoxDecoration(
+                              color: Color(0XFFEBF2Fd),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Icon(
+                              Icons.restaurant,
+                              size: 40,
+                            ),
+                          ),
+
+                          Padding(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+
+                                Text("Chicken Steak",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.black
+                                    ),
+                                  ),
+                                ),
+
+                                SizedBox(
+                                  height: 3.0,
+                                ),
+
+                                Text("01:00pm",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.grey
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+
+                        ],
+                      ),
+
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 2.0,
+                          ),
+                        ),
+                        padding: EdgeInsets.all(2.0),
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: Colors.grey,
+                          size: 15,
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),
+
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+
+                      Row(
+                        children: [
+
+                          Container(
+                            width: 60,
+                            height: 60,
+                            decoration: BoxDecoration(
+                              color: Color(0XFFF8ECF8),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Icon(
+                              Icons.rectangle,
+                              size: 40,
+                            ),
+                          ),
+
+                          Padding(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+
+                                Text("Milk",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.black
+                                    ),
+                                  ),
+                                ),
+
+                                SizedBox(
+                                  height: 3.0,
+                                ),
+
+                                Text("01:20pm",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.grey
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+
+                        ],
+                      ),
+
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 2.0,
+                          ),
+                        ),
+                        padding: EdgeInsets.all(2.0),
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: Colors.grey,
+                          size: 15,
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),
+
               ],
             ),
           ),
