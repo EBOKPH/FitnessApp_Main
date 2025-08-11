@@ -1216,6 +1216,10 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
                 ),
               ),
 
+              Text("Test Icon"),
+
+              Icon(Icons.abc),
+
               Container(
                 width: double.infinity,
                 height: 100,
