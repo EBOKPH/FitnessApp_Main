@@ -1139,29 +1139,6 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                   ),
                 ),
 
-                /*Row(
-                  children: [
-
-                    Container(
-                      width: 55,
-                      height: 15,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
-                      ),
-                    ),
-                    Container(
-                      width: 155,
-                      height: 15,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFD1D9F6),
-                        borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20)),
-                      ),
-                    ),
-
-                  ],
-                ),*/
-
                 Padding(
                   padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0, bottom: 20.0),
                   child: Material(
@@ -1180,9 +1157,37 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                               Row(
                                 children: [
 
-
+                                  Text("data"),
+                                  Text("data"),
 
                                 ],
+                              ),
+
+                              Text("data"),
+
+                            ],
+                          ),
+
+                          Row(
+                            children: [
+
+                              Expanded(
+                                child: Container(
+                                  height: 15,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  height: 15,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFFD1D9F6),
+                                    borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20)),
+                                  ),
+                                ),
                               ),
 
                             ],
