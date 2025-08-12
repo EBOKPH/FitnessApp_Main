@@ -1400,19 +1400,106 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, right: 20.0, bottom: 20.0),
+                  child: Material(
+                    elevation: 3,
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.white,
+                    child: Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          children: [
+
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+
+                                Row(
+                                  children: [
+
+                                    Text("Carbo.",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 5.0,
+                                    ),
+                                    Icon(
+                                      Icons.food_bank_outlined,
+                                      color: Colors.yellow,
+                                    ),
+
+                                  ],
+                                ),
+
+                                Text("320 kCal",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.grey
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+
+                            Padding(
+                              padding: EdgeInsets.only(top: 5.0),
+                              child: Row(
+                                children: [
+
+                                  Expanded(
+                                    child: Container(
+                                      height: 15,
+                                      decoration: BoxDecoration(
+                                        color: Color(0XFF99A0FD),
+                                        borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Container(
+                                      height: 15,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFD1D9F6),
+                                        borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20)),
+                                      ),
+                                    ),
+                                  ),
+
+                                ],
+                              ),
+                            ),
+
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
               ],
             ),
           ),
       ),
 
-      /*floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Color(0XFFD495E7),
         child: Icon(
           Icons.add,
           color: Colors.white,
         ),
-      ),*/
+      ),
 
       backgroundColor: Colors.white,
 
