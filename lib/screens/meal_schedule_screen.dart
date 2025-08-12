@@ -15,7 +15,7 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
 
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Meal Schedule123",
+        title: Text("Meal Schedule",
           style: GoogleFonts.poppins(
             textStyle: TextStyle(
                 fontSize: 20,
