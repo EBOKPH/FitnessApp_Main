@@ -1200,7 +1200,7 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
                                     child: Container(
                                       height: 15,
                                       decoration: BoxDecoration(
-                                        color: Colors.blue,
+                                        color: Color(0XFF99A0FD),
                                         borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
                                       ),
                                     ),
@@ -1230,6 +1230,15 @@ class _MealScheduleScreenState extends State<MealScheduleScreen> {
             ),
           ),
       ),
+
+      /*floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Color(0XFFD495E7),
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
+      ),*/
 
       backgroundColor: Colors.white,
 
