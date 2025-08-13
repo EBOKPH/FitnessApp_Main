@@ -183,101 +183,90 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                   ),
                 ),
 
-                /*Align(
-                  alignment: Alignment.centerLeft,
-                  child: FixedTimeline.tileBuilder(
-                    builder: TimelineTileBuilder.connected(
-                      itemCount: events.length,
-                      connectorBuilder: (_, index, __) => SolidLineConnector(
-                        color: Colors.grey,
-                      ),
-                      indicatorBuilder: (_, index) => DotIndicator(
-                        color: index == events.length - 1
-                            ? Colors.green
-                            : Colors.blue,
-                      ),
-                      contentsBuilder: (_, index) => Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          children: [
-
-                            Text(
-                              events[index],
-                              style: TextStyle(fontSize: 16),
-                            ),
-                            Text("To make the gestures feel more relaxed stretch your arms as you start this movement. No bending of hands."),
-
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ),*/
-
                 Align(
                   alignment: Alignment.centerLeft,
-                  child: Column(
-                    children: [
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
+                    child: Column(
+                      children: [
 
-                      Row(
-                        children: [
+                        Row(
+                          children: [
 
-                          Column(
-                            children: [
-
-                              Container(
-                                width: 20,
-                                height: 20,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                  color: Colors.purpleAccent,
-                                ),
-                              ),
-
-                              VerticalDivider(
-                                color: Colors.red,
-                                thickness: 20,
-                                width: 20,
-                                indent: 10,
-                                endIndent: 10,
-                              ),
-
-                            ],
-                          ),
-
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                            Column(
                               children: [
 
-                                Text("Spread your arms",
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors.black
-                                    ),
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                    color: Colors.purpleAccent,
                                   ),
                                 ),
 
-                                Text("To make the gestures feel more relaxed stretch your arms as you start this movement. No bending of hands.",
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.grey
-                                    ),
-                                  ),
+                                Container(
+                                  width: 1,
+                                  height: 70,
+                                  color: Colors.purpleAccent,
                                 ),
 
                               ],
                             ),
+
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 10.0, top: 5.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+
+                                    Text("Spread your arms",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500,
+                                            color: Colors.black
+                                        ),
+                                      ),
+                                    ),
+
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+
+                                    Text("To make the gestures feel more relaxed stretch your arms as you start this movement. No bending of hands.",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w600,
+                                            color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Padding(
+                            padding: EdgeInsets.only(left: 9.0),
+                            child: Container(
+                              width: 1,
+                              height: 20,
+                              color: Colors.purpleAccent,
+                            ),
                           ),
+                        ),
 
-                        ],
-                      ),
-
-                    ],
+                      ],
+                    ),
                   ),
                 ),
 
