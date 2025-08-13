@@ -126,15 +126,17 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             SizedBox(
                               width: 20,
                             ),
-
                             Icon(
                               Icons.calendar_month_rounded,
                               color: Colors.grey,
                             ),
-
-                            Text("Today's Target",
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text("Schedule Workout",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                color: Colors.grey,
                               ),
                             ),
 
@@ -144,19 +146,22 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                         Row(
                           children: [
 
-                            Padding(
-                              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
-                              child: ElevatedButton(
-                                style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
-                                ),
-                                onPressed: () {},
-                                child: Text("Check",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                ),
+                            Text("5/27, 09:00 AM",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
                               ),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios_rounded,
+                              color: Colors.grey,
+                              size: 16,
+                            ),
+                            SizedBox(
+                              width: 20,
                             ),
 
                           ],
