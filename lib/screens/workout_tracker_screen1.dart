@@ -523,7 +523,7 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                           Navigator.pop(context);
                         },
                         child: Text(
-                          "Confirm",
+                          "Save",
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.w600,

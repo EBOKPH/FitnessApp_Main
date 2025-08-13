@@ -1,3 +1,4 @@
+import 'package:fitnestx/screens/fullbody_workout_screen.dart';
 import 'package:fitnestx/screens/workout_tracker_screen1.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -400,7 +401,9 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
                                   style: ButtonStyle(
                                     backgroundColor: MaterialStateProperty.all(Colors.white),
                                   ),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) => FullbodyWorkoutScreen()));
+                                  },
                                   child: Text("View More",
                                     style: TextStyle(
                                       color: Colors.blue,
