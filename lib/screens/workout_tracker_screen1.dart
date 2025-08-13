@@ -497,11 +497,43 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                   ),
                 ),
 
-
-
-                //Button
-
-
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0, bottom: 30.0),
+                  child: SizedBox(
+                    height: 55,
+                    width: double.infinity,
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [Color(0xFF97B3FE), Color(0xFF9AC2FF)],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
+                        borderRadius: BorderRadius.circular(40.0),
+                      ),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.transparent,
+                          shadowColor: Colors.transparent,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: Text(
+                          "Confirm",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
 
               ],
             ),
