@@ -15,15 +15,6 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
 
       appBar: AppBar(
         centerTitle: true,
-        /*title: Text("Workout Tracker",
-          style: GoogleFonts.poppins(
-            textStyle: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.black
-            ),
-          ),
-        ),*/
         leading: Padding(
           padding: EdgeInsets.fromLTRB(16.0, 0.0, 0.0, 10.0),
           child: Container(
@@ -70,6 +61,49 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                     width: double.infinity,
                     height: 300,
                     child: Image.asset("assets/images/FullBody_Workout_Image1.png"),
+                  ),
+
+                  SizedBox(
+                    height: 20,
+                  ),
+
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text("Fullbody Workout",
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  SizedBox(
+                    height: 5,
+                  ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+
+                      Text("11 Exercises | 32 mins | 320 Calories Burn",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.grey
+                          ),
+                        ),
+                      ),
+
+                      Icon(
+                        Icons.heart_broken,
+                        color: Colors.red,
+                      ),
+
+                    ],
                   ),
 
                 ],
