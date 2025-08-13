@@ -282,7 +282,7 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
 
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsets.only(left: 10.0, top: 5.0),
+                                padding: EdgeInsets.only(left: 10.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -331,11 +331,6 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                           ),
                         ),
 
-
-
-
-
-
                         Row(
                           children: [
 
@@ -362,7 +357,7 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
 
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsets.only(left: 10.0, top: 5.0),
+                                padding: EdgeInsets.only(left: 10.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -399,10 +394,77 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                           ],
                         ),
 
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Padding(
+                            padding: EdgeInsets.only(left: 9.0),
+                            child: Container(
+                              width: 1,
+                              height: 20,
+                              color: Colors.purpleAccent,
+                            ),
+                          ),
+                        ),
 
+                        Row(
+                          children: [
 
+                            Column(
+                              children: [
 
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                    color: Colors.purpleAccent,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 70,
+                                ),
 
+                              ],
+                            ),
+
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 10.0, top: 5.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+
+                                    Text("Clapping Both Hands",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500,
+                                            color: Colors.black
+                                        ),
+                                      ),
+                                    ),
+
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+
+                                    Text("This cannot be taken lightly, You see, without realizing it, the clapping of your hands helps you to keep your rhythm while doing the Jumping Jack.",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w600,
+                                            color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
 
                       ],
                     ),
