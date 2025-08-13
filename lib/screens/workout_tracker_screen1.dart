@@ -287,7 +287,7 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
 
-                                    Text("Spread your arms",
+                                    Text("Rest at The Toe",
                                       style: GoogleFonts.poppins(
                                         textStyle: TextStyle(
                                             fontSize: 16,
@@ -301,7 +301,7 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                                       height: 5,
                                     ),
 
-                                    Text("To make the gestures feel more relaxed stretch your arms as you start this movement. No bending of hands.",
+                                    Text("The basis of this movement is jumping Now, what needs to be considered is that you have to use the tips of your feet.",
                                       style: GoogleFonts.poppins(
                                         textStyle: TextStyle(
                                             fontSize: 14,
@@ -318,6 +318,91 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
 
                           ],
                         ),
+
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Padding(
+                            padding: EdgeInsets.only(left: 9.0),
+                            child: Container(
+                              width: 1,
+                              height: 20,
+                              color: Colors.purpleAccent,
+                            ),
+                          ),
+                        ),
+
+
+
+
+
+
+                        Row(
+                          children: [
+
+                            Column(
+                              children: [
+
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                    color: Colors.purpleAccent,
+                                  ),
+                                ),
+
+                                Container(
+                                  width: 1,
+                                  height: 70,
+                                  color: Colors.purpleAccent,
+                                ),
+
+                              ],
+                            ),
+
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 10.0, top: 5.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+
+                                    Text("Adjust Foot Movement",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500,
+                                            color: Colors.black
+                                        ),
+                                      ),
+                                    ),
+
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+
+                                    Text("Jumping Jack is not just an ordinary jump. But, you also have to pay close attention to leg movements.",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w600,
+                                            color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+
+
+
+
 
                       ],
                     ),
