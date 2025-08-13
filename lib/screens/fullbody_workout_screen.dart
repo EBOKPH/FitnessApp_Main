@@ -128,7 +128,6 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             ),
                             Icon(
                               Icons.calendar_month_rounded,
-                              color: Colors.grey,
                             ),
                             SizedBox(
                               width: 10,
@@ -136,7 +135,6 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             Text("Schedule Workout",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color: Colors.grey,
                               ),
                             ),
 
@@ -149,7 +147,6 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             Text("5/27, 09:00 AM",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color: Colors.grey,
                               ),
                             ),
                             SizedBox(
@@ -157,7 +154,6 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             ),
                             Icon(
                               Icons.arrow_forward_ios_rounded,
-                              color: Colors.grey,
                               size: 16,
                             ),
                             SizedBox(
@@ -169,6 +165,97 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
 
                       ],
                     ),
+                  ),
+
+                  SizedBox(
+                    height: 20,
+                  ),
+
+                  Container(
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFF6EAFC),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        Row(
+                          children: [
+
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Icon(
+                              Icons.loop_rounded,
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text("Difficulty",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+                        Row(
+                          children: [
+
+                            Text("Beginner",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios_rounded,
+                              size: 16,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+
+                          ],
+                        ),
+
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(
+                    height: 30,
+                  ),
+                  
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+
+                      Text("You'll Need",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(right: 26.0),
+                        child: Text("5 items",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Color(0XFFC7C7C7),
+                          ),
+                        ),
+                      ),
+
+                    ],
                   ),
 
                 ],
