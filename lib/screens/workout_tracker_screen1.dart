@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:timelines_plus/timelines_plus.dart';
 
 class WorkoutTrackerScreen1 extends StatefulWidget {
   const WorkoutTrackerScreen1({super.key});
@@ -9,6 +10,15 @@ class WorkoutTrackerScreen1 extends StatefulWidget {
 }
 
 class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
+
+  final List<String> events = [
+    "Order Placed",
+    "Order Confirmed",
+    "Order Shipped",
+    "Out for Delivery",
+    "Delivered"
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -176,6 +186,40 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
+                    padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                    child: FixedTimeline.tileBuilder(
+                      builder: TimelineTileBuilder.connected(
+                        itemCount: events.length,
+                        connectorBuilder: (_, index, __) => SolidLineConnector(
+                          color: Colors.grey,
+                        ),
+                        indicatorBuilder: (_, index) => DotIndicator(
+                          color: index == events.length - 1
+                              ? Colors.green
+                              : Colors.blue,
+                        ),
+                        contentsBuilder: (_, index) => Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+
+                              Text(
+                                events[index],
+                                style: TextStyle(fontSize: 16),
+                              ),
+                              Text("To make the gestures feel more relaxed stretch your arms as you start this movement. No bending of hands."),
+
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
                     padding: EdgeInsets.only(left: 20.0, top: 20.0),
                     child: Text("Custom Repetitions",
                       style: GoogleFonts.poppins(
@@ -195,5 +239,6 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
       ),
 
     );
+
   }
 }
