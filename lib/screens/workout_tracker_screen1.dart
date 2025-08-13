@@ -487,6 +487,22 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: CalendarDatePicker(
+                      initialDate: DateTime.now(),
+                      firstDate: DateTime.now(),
+                      lastDate: DateTime(2026),
+                      onDateChanged: (value) {},
+                  ),
+                ),
+
+
+
+                //Button
+
+
+
               ],
             ),
           ),
