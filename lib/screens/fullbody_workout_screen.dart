@@ -231,7 +231,7 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                   SizedBox(
                     height: 30,
                   ),
-                  
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -245,13 +245,37 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.only(right: 26.0),
-                        child: Text("5 items",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Color(0XFFC7C7C7),
+                      Text("5 items",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color(0XFFC7C7C7),
+                        ),
+                      ),
+
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 30,
+                  ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+
+                      Text("Exercises",
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black
                           ),
+                        ),
+                      ),
+                      Text("3 sets",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color(0XFFC7C7C7),
                         ),
                       ),
 
