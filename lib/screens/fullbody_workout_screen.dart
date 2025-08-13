@@ -106,6 +106,66 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                     ],
                   ),
 
+                  SizedBox(
+                    height: 25,
+                  ),
+
+                  Container(
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFE9F0FF),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        Row(
+                          children: [
+
+                            SizedBox(
+                              width: 20,
+                            ),
+
+                            Icon(
+                              Icons.calendar_month_rounded,
+                              color: Colors.grey,
+                            ),
+
+                            Text("Today's Target",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+                        Row(
+                          children: [
+
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+                              child: ElevatedButton(
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                                ),
+                                onPressed: () {},
+                                child: Text("Check",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+                      ],
+                    ),
+                  ),
+
                 ],
               ),
             ),
