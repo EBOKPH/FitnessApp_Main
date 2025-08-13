@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:timelines_plus/timelines_plus.dart';
 
 class WorkoutTrackerScreen1 extends StatefulWidget {
   const WorkoutTrackerScreen1({super.key});
@@ -10,14 +9,6 @@ class WorkoutTrackerScreen1 extends StatefulWidget {
 }
 
 class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
-
-  final List<String> events = [
-    "Order Placed",
-    "Order Confirmed",
-    "Order Shipped",
-    "Out for Delivery",
-    "Delivered"
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -263,6 +254,69 @@ class _WorkoutTrackerScreen1State extends State<WorkoutTrackerScreen1> {
                               color: Colors.purpleAccent,
                             ),
                           ),
+                        ),
+
+                        Row(
+                          children: [
+
+                            Column(
+                              children: [
+
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                    color: Colors.purpleAccent,
+                                  ),
+                                ),
+
+                                Container(
+                                  width: 1,
+                                  height: 70,
+                                  color: Colors.purpleAccent,
+                                ),
+
+                              ],
+                            ),
+
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 10.0, top: 5.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+
+                                    Text("Spread your arms",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500,
+                                            color: Colors.black
+                                        ),
+                                      ),
+                                    ),
+
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+
+                                    Text("To make the gestures feel more relaxed stretch your arms as you start this movement. No bending of hands.",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w600,
+                                            color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+                            ),
+
+                          ],
                         ),
 
                       ],

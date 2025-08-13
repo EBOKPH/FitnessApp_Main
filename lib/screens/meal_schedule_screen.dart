@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:timelines_plus/timelines_plus.dart';
 
 class MealScheduleScreen extends StatefulWidget {
   const MealScheduleScreen({super.key});
