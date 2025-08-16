@@ -489,7 +489,99 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                     ),
                   ),
 
-                  //
+                  Padding(
+                    padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+
+                        Row(
+                          children: [
+
+                            /*Container(
+                              width: 60,
+                              height: 60,
+                              decoration: BoxDecoration(
+                                color: Color(0XFFEBF2Fd),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Icon(
+                                Icons.cake_outlined,
+                                size: 40,
+                              ),
+                            ),*/
+
+                            Container(
+                              width: 80,
+                              height: 80,
+                              decoration: BoxDecoration(
+                                color: Color(0XFFEBF2Fd),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Image.asset("assets/images/fullbody_workout_screen_image1.png",
+                                width: 140,
+                                height: 140,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+
+                            Padding(
+                              padding: EdgeInsets.only(left: 10.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+
+                                  Text("Warm Up",
+                                    style: GoogleFonts.poppins(
+                                      textStyle: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w700,
+                                          color: Colors.black
+                                      ),
+                                    ),
+                                  ),
+
+                                  SizedBox(
+                                    height: 3.0,
+                                  ),
+
+                                  Text("05:00",
+                                    style: GoogleFonts.poppins(
+                                      textStyle: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                          color: Colors.grey
+                                      ),
+                                    ),
+                                  ),
+
+                                ],
+                              ),
+                            ),
+
+                          ],
+                        ),
+
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.grey,
+                              width: 2.0,
+                            ),
+                          ),
+                          padding: EdgeInsets.all(2.0),
+                          child: Icon(
+                            Icons.arrow_forward_ios_rounded,
+                            color: Colors.grey,
+                            size: 15,
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+
 
                 ],
               ),
