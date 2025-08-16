@@ -283,19 +283,30 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                   ),
 
                   SizedBox(
-                    height: 60,
+                    height: 120,
                     child: Padding(
                       padding: EdgeInsets.only(left: 20.0),
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
 
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(12.0),
-                            child: Image.asset("assets/images/FitnessImage1.jpeg",
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.cover,
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(12.0),
+                                  child: Image.asset("assets/images/FitnessImage1.jpeg",
+                                    width: 100,
+                                    height: 100,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+
+                                Text("data"),
+
+                              ],
                             ),
                           ),
                           SizedBox(
