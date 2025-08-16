@@ -282,6 +282,72 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                     ],
                   ),
 
+                  SizedBox(
+                    height: 60,
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 20.0),
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(12.0),
+                            child: Image.asset("assets/images/FitnessImage1.jpeg",
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(12.0),
+                            child: Image.asset("assets/images/FitnessImage2.jpeg",
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(12.0),
+                            child: Image.asset("assets/images/FitnessImage3.jpeg",
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(12.0),
+                            child: Image.asset("assets/images/FitnessImage4.jpeg",
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(12.0),
+                            child: Image.asset("assets/images/FitnessImage5.jpeg",
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+
+                        ],
+                      ),
+                    ),
+                  ),
+
                 ],
               ),
             ),
