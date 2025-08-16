@@ -293,7 +293,7 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             ),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 20,
                           ),
 
                           Expanded(
@@ -322,7 +322,7 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             ),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 20,
                           ),
 
                           Expanded(
@@ -351,7 +351,7 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             ),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 20,
                           ),
 
                           Expanded(
@@ -380,7 +380,7 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             ),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 20,
                           ),
 
                           Expanded(
@@ -409,7 +409,7 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                             ),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 20,
                           ),
 
                           Expanded(
