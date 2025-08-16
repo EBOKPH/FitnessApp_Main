@@ -280,7 +280,7 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                                Text("11 Exercises | 32 mins | 320 Calories Burn",
+                                Text("Barbell",
                                   style: GoogleFonts.poppins(
                                     textStyle: TextStyle(
                                         fontSize: 14,
@@ -302,27 +302,30 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                     ),
                   ),
 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
+                  Padding(
+                    padding: EdgeInsets.only(top: 20.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
 
-                      Text("Exercises",
-                        style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black
+                        Text("Exercises",
+                          style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black
+                            ),
                           ),
                         ),
-                      ),
-                      Text("3 sets",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Color(0XFFC7C7C7),
+                        Text("3 sets",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Color(0XFFC7C7C7),
+                          ),
                         ),
-                      ),
 
-                    ],
+                      ],
+                    ),
                   ),
 
                 ],
