@@ -117,100 +117,311 @@ class _ResultScreenState extends State<ResultScreen> {
                 child: TabBarView(
                   children: [
 
-                    Column(
-                      children: [
+                    SingleChildScrollView(
+                      child: Column(
+                        children: [
 
-                        Padding(
-                          padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-
-                              Text("Average Progress",
-                                style: GoogleFonts.poppins(
-                                  textStyle: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.black
-                                  ),
-                                ),
-                              ),
-                              Text("Good",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.greenAccent,
-                                ),
-                              ),
-
-                            ],
-                          ),
-                        ),
-
-                        Padding(
-                          padding: EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0),
-                          child: Container(
-                            height: 30,
-                            decoration: BoxDecoration(
-                              color: Colors.grey.shade200,
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Stack(
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
 
-                                LayoutBuilder(
-                                  builder: (context, constraints) {
-                                    return Container(
-                                      width: constraints.maxWidth * 0.62,
-                                      decoration: BoxDecoration(
-                                        gradient: const LinearGradient(
-                                          colors: [Color(0xFF94A3FE), Color(0xFFAF96F9)],
-                                        ),
-                                        borderRadius: BorderRadius.circular(30),
-                                      ),
-                                    );
-                                  },
-                                ),
-
-                                Center(
-                                  child: Text(
-                                    "${(0.62 * 100).toInt()}%",
-                                    style: const TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
+                                Text("Average Progress",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black
                                     ),
                                   ),
-                                )
+                                ),
+                                Text("Good",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.greenAccent,
+                                  ),
+                                ),
+
                               ],
                             ),
                           ),
-                        ),
 
-                        Padding(
-                          padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-
-                              Text("May",
-                                style: GoogleFonts.poppins(
-                                  textStyle: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                  ),
-                                ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0),
+                            child: Container(
+                              height: 30,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade200,
+                                borderRadius: BorderRadius.circular(30),
                               ),
-                              Text("June",
-                                style: GoogleFonts.poppins(
-                                  textStyle: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
+                              child: Stack(
+                                children: [
 
-                            ],
+                                  LayoutBuilder(
+                                    builder: (context, constraints) {
+                                      return Container(
+                                        width: constraints.maxWidth * 0.62,
+                                        decoration: BoxDecoration(
+                                          gradient: const LinearGradient(
+                                            colors: [Color(0xFF94A3FE), Color(0xFFAF96F9)],
+                                          ),
+                                          borderRadius: BorderRadius.circular(30),
+                                        ),
+                                      );
+                                    },
+                                  ),
+
+                                  Center(
+                                    child: Text(
+                                      "${(0.62 * 100).toInt()}%",
+                                      style: const TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
                           ),
-                        ),
 
-                      ],
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+
+                                Text("May",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                Text("June",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text("Front Facing",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0),
+                            child: Row(
+                              children: [
+
+                                Expanded(
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20),
+                                    child: Image.asset(
+                                      "assets/images/FullBody_Workout_Image1.png",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Expanded(
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20),
+                                    child: Image.asset(
+                                      "assets/images/FullBody_Workout_Image1.png",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text("Front Facing",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                            child: Row(
+                              children: [
+
+                                Expanded(
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20),
+                                    child: Image.asset(
+                                      "assets/images/FullBody_Workout_Image1.png",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Expanded(
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20),
+                                    child: Image.asset(
+                                      "assets/images/FullBody_Workout_Image1.png",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+
+
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text("Front Facing",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                            child: Row(
+                              children: [
+
+                                Expanded(
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20),
+                                    child: Image.asset(
+                                      "assets/images/FullBody_Workout_Image1.png",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Expanded(
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20),
+                                    child: Image.asset(
+                                      "assets/images/FullBody_Workout_Image1.png",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+
+
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text("Front Facing",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                            child: Row(
+                              children: [
+
+                                Expanded(
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20),
+                                    child: Image.asset(
+                                      "assets/images/FullBody_Workout_Image1.png",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Expanded(
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20),
+                                    child: Image.asset(
+                                      "assets/images/FullBody_Workout_Image1.png",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+
+                          Padding(
+                            padding: EdgeInsets.only(left: 20.0, top: 30.0, right: 20.0, bottom: 30.0),
+                            child: SizedBox(
+                              height: 55,
+                              width: double.infinity,
+                              child: DecoratedBox(
+
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    colors: [Color(0xFF97B3FE), Color(0xFF9AC2FF)],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                  ),
+                                  borderRadius: BorderRadius.circular(30.0),
+
+                                ),
+                                child: ElevatedButton(
+
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: Colors.transparent,
+                                    shadowColor: Colors.transparent,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8.0),
+                                    ),
+
+                                  ),
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Back to Home",
+                                    style: TextStyle(
+
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+
+                        ],
+                      ),
                     ),
 
                     Column(
