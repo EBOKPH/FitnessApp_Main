@@ -1,3 +1,4 @@
+import 'package:fitnestx/screens/result_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -39,7 +40,9 @@ class _FullbodyWorkoutScreenState extends State<FullbodyWorkoutScreen> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => ResultScreen(),));
+                },
                 icon: Icon(Icons.more_horiz_rounded, color: Colors.black,),
               ),
             ),
