@@ -33,7 +33,7 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Welcome Back, sgadf",
+            Text("Welcome Back,",
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   fontSize: 15,
