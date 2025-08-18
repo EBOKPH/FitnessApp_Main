@@ -117,13 +117,115 @@ class _ResultScreenState extends State<ResultScreen> {
                 child: TabBarView(
                   children: [
 
-                    Center(child: Text("This is wd Photo Tab")),
-                    Center(child: Text("This is Statistic Tab")),
+                    Column(
+                      children: [
+
+                        Padding(
+                          padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+
+                              Text("Average Progress",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black
+                                  ),
+                                ),
+                              ),
+                              Text("Good",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.greenAccent,
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+
+                        Padding(
+                          padding: EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0),
+                          child: Container(
+                            height: 30,
+                            decoration: BoxDecoration(
+                              color: Colors.grey.shade200,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Stack(
+                              children: [
+
+                                LayoutBuilder(
+                                  builder: (context, constraints) {
+                                    return Container(
+                                      width: constraints.maxWidth * 0.62,
+                                      decoration: BoxDecoration(
+                                        gradient: const LinearGradient(
+                                          colors: [Color(0xFF94A3FE), Color(0xFFAF96F9)],
+                                        ),
+                                        borderRadius: BorderRadius.circular(30),
+                                      ),
+                                    );
+                                  },
+                                ),
+
+                                Center(
+                                  child: Text(
+                                    "${(0.62 * 100).toInt()}%",
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+
+                        Padding(
+                          padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+
+                              Text("May",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              Text("June",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+
+                      ],
+                    ),
+
+                    Column(
+                      children: [
+
+                        //
+
+                      ],
+                    ),
 
                   ],
                 ),
               ),
             ],
+
           ),
         ),
       ),
