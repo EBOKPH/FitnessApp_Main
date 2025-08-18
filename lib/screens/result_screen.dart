@@ -218,6 +218,7 @@ class _ResultScreenState extends State<ResultScreen> {
                             style: GoogleFonts.poppins(
                               textStyle: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                color: Colors.grey[500],
                               ),
                             ),
                           ),
@@ -231,7 +232,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),
                                     child: Image.asset(
-                                      "assets/images/FullBody_Workout_Image1.png",
+                                      "assets/images/resuly_image1.png",
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -243,7 +244,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),
                                     child: Image.asset(
-                                      "assets/images/FullBody_Workout_Image1.png",
+                                      "assets/images/resuly_image2.png",
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -256,10 +257,11 @@ class _ResultScreenState extends State<ResultScreen> {
                           SizedBox(
                             height: 20,
                           ),
-                          Text("Front Facing",
+                          Text("Back Facing",
                             style: GoogleFonts.poppins(
                               textStyle: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                color: Colors.grey[500],
                               ),
                             ),
                           ),
@@ -272,7 +274,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),
                                     child: Image.asset(
-                                      "assets/images/FullBody_Workout_Image1.png",
+                                      "assets/images/resuly_image3.png",
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -284,7 +286,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),
                                     child: Image.asset(
-                                      "assets/images/FullBody_Workout_Image1.png",
+                                      "assets/images/resuly_image4.png",
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -294,14 +296,14 @@ class _ResultScreenState extends State<ResultScreen> {
                             ),
                           ),
 
-
                           SizedBox(
                             height: 20,
                           ),
-                          Text("Front Facing",
+                          Text("Left Facing",
                             style: GoogleFonts.poppins(
                               textStyle: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                color: Colors.grey[500],
                               ),
                             ),
                           ),
@@ -314,7 +316,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),
                                     child: Image.asset(
-                                      "assets/images/FullBody_Workout_Image1.png",
+                                      "assets/images/resuly_image5.png",
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -326,7 +328,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),
                                     child: Image.asset(
-                                      "assets/images/FullBody_Workout_Image1.png",
+                                      "assets/images/resuly_image6.png",
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -336,14 +338,14 @@ class _ResultScreenState extends State<ResultScreen> {
                             ),
                           ),
 
-
                           SizedBox(
                             height: 20,
                           ),
-                          Text("Front Facing",
+                          Text("Right Facing",
                             style: GoogleFonts.poppins(
                               textStyle: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                color: Colors.grey[500],
                               ),
                             ),
                           ),
@@ -356,7 +358,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),
                                     child: Image.asset(
-                                      "assets/images/FullBody_Workout_Image1.png",
+                                      "assets/images/resuly_image7.png",
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -368,7 +370,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),
                                     child: Image.asset(
-                                      "assets/images/FullBody_Workout_Image1.png",
+                                      "assets/images/resuly_image8.png",
                                       fit: BoxFit.cover,
                                     ),
                                   ),
