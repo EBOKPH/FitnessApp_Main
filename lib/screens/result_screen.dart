@@ -513,10 +513,136 @@ class _ResultScreenState extends State<ResultScreen> {
                             ),
                           ),
 
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text("Lose Weight",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(
+                            height: 20,
+                          ),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+
+                              Text("33%",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey[500],
+                                  ),
+                                ),
+                              ),
+                              Row(
+                                children: [
+
+                                  Container(
+                                    width: 95,
+                                    height: 15,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFFFDB4B3),
+                                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
+                                    ),
+                                  ),
+                                  Container(
+                                    width: 195,
+                                    height: 15,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF9AC2FD),
+                                      borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20)),
+                                    ),
+                                  ),
+
+                                ],
+                              ),
+                              Text("67%",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey[500],
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text("Hight Increase",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(
+                            height: 20,
+                          ),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+
+                              Text("88%",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey[500],
+                                  ),
+                                ),
+                              ),
+                              Row(
+                                children: [
+
+                                  Container(
+                                    width: 195,
+                                    height: 15,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFFFDB4B3),
+                                      borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
+                                    ),
+                                  ),
+                                  Container(
+                                    width: 95,
+                                    height: 15,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF9AC2FD),
+                                      borderRadius: BorderRadius.only(topRight: Radius.circular(20), bottomRight: Radius.circular(20)),
+                                    ),
+                                  ),
+
+                                ],
+                              ),
+                              Text("12%",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey[500],
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
 
 
 
-                          
+
+
+
+
+
+
 
 
 
