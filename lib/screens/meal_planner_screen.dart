@@ -361,12 +361,118 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: EdgeInsets.only(top: 20.0, left: 20.0),
+                    padding: EdgeInsets.only(top: 30.0, left: 20.0),
                     child: Text("Find Something to Eat",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                       ),
+                    ),
+                  ),
+                ),
+
+                SizedBox(
+                  height: 200,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+
+                        /*Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(12.0),
+                                child: Image.asset("assets/images/fullbody_workout_screen_image10.png",
+                                  width: 140,
+                                  height: 140,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              Text("Barbell",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(12.0),
+                                child: Image.asset("assets/images/fullbody_workout_screen_image11.png",
+                                  width: 140,
+                                  height: 140,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              Text("Skipping Rope",
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),*/
+
+                        Container(
+                          width: 200,
+                          height: 180,
+                          decoration: BoxDecoration(
+                            color: Color(0XFFE9F0FF),
+                            borderRadius: BorderRadius.circular(26.0),
+                          ),
+                          child: Column(
+                            children: [
+
+                              Padding(
+                                padding: EdgeInsets.only(top: 10.0, right: 10.0),
+                                child: Align(
+                                  alignment: Alignment.topRight,
+                                  child: Icon(
+                                      Icons.restaurant,
+                                      size: 46.0,
+                                  ),
+                                ),
+                              ),
+
+                              Text("data"),
+
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Container(
+                          width: 200,
+                          height: 180,
+                          decoration: BoxDecoration(
+                            color: Color(0XFFE9F0FF),
+                            borderRadius: BorderRadius.circular(26.0),
+                          ),
+                        ),
+
+                      ],
                     ),
                   ),
                 ),
