@@ -769,6 +769,87 @@ class _BreakfastScreenState extends State<BreakfastScreen> {
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0, bottom: 30.0),
+                  child: Material(
+                    elevation: 3,
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.white,
+                    child: Padding(
+                      padding: EdgeInsets.all(12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+
+                          Row(
+                            children: [
+
+                              Container(
+                                width: 65,
+                                height: 65,
+                                decoration: BoxDecoration(
+                                  color: Color(0XFFE9F0FF),
+                                  borderRadius: BorderRadius.circular(44.0),
+                                ),
+                                child: Icon(
+                                    Icons.restaurant,
+                                    size: 46.0
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 20.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+
+                                    Text("Salmon Nigiri",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black
+                                        ),
+                                      ),
+                                    ),
+                                    Text("Medium | 20mins | 120kCal",
+                                      style: GoogleFonts.poppins(
+                                        textStyle: TextStyle(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                              ),
+
+                            ],
+                          ),
+
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey,
+                                width: 2.0,
+                              ),
+                            ),
+                            padding: EdgeInsets.all(2.0),
+                            child: Icon(
+                              Icons.arrow_forward_ios_rounded,
+                              color: Colors.grey,
+                              size: 15,
+                            ),
+                          ),
+
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+
               ],
             ),
           ),
