@@ -227,7 +227,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
 
-                                  Text("Spread your arms",
+                                  Text("Step 1",
                                     style: GoogleFonts.poppins(
                                       textStyle: TextStyle(
                                           fontSize: 16,
@@ -241,7 +241,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                                     height: 5,
                                   ),
 
-                                  Text("To make the gestures feel more relaxed stretch your arms as you start this movement. No bending of hands.",
+                                  Text("Prepare all of the ingredients that needed",
                                     style: GoogleFonts.poppins(
                                       textStyle: TextStyle(
                                           fontSize: 14,
