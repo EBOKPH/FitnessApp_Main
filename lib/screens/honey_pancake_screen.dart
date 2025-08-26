@@ -15,7 +15,50 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
 
       appBar: AppBar(
 
+        actions: [
+
+          Padding(
+            padding: EdgeInsets.only(right: 16.0),
+            child: Container(
+              height: 36,
+              width: 36,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.grey[100],
+              ),
+              child: Icon(
+                Icons.more_horiz_rounded,
+              ),
+            ),
+          ),
+
+        ],
+
+        leading: Padding(
+          padding: EdgeInsets.only(left: 16.0, bottom: 10.0, top: 5.0),
+          child: Container(
+            height: 10.0,
+            width: 10.0,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.grey[100],
+            ),
+            child: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+            ),
+          ),
+        ),
+
         backgroundColor: Colors.white,
+
+        elevation: 0,
+
+        automaticallyImplyLeading: false,
 
       ),
 
@@ -25,7 +68,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
             children: [
 
               Center(
-                child: Image.asset("assets/images/Image8.png"),
+                child: Image.asset("assets/images/honey_pancake.png"),
               ),
 
               SizedBox(
@@ -36,7 +79,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.only(left: 20.0),
-                  child: Text("Jumping Jack",
+                  child: Text("Honey PanCake",
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                           fontSize: 16,
@@ -53,6 +96,22 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                 child: Padding(
                   padding: EdgeInsets.only(left: 20.0, top: 5.0),
                   child: Text("Easy | 390 Calories Burn",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.grey
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: EdgeInsets.only(left: 20.0, top: 5.0),
+                  child: Text("by James Ruth",
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                           fontSize: 14,
@@ -88,7 +147,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.only(left: 20.0, right: 20.0),
-                  child: Text("A jumping jack, also known as a star jump and called a side-straddle hop in the US military, is a physical jumping exercise performed by jumping to a position with the legs spread wide.",
+                  child: Text("Pancakes are some people's favourite breakfast, who doesn't like pancakes? Especially, with the real honey splash on top of the pancakes, of course everyone loves that! besides being Read more...",
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                           fontSize: 14,
@@ -106,7 +165,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
 
-                    Text("How To Do It",
+                    Text("Step by step",
                       style: GoogleFonts.poppins(
                         textStyle: TextStyle(
                             fontSize: 16,
@@ -427,32 +486,6 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                 ),
               ),
 
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 20.0, top: 20.0),
-                  child: Text("Custom Repetitions",
-                    style: GoogleFonts.poppins(
-                      textStyle: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: EdgeInsets.all(10.0),
-                child: CalendarDatePicker(
-                  initialDate: DateTime.now(),
-                  firstDate: DateTime.now(),
-                  lastDate: DateTime(2026),
-                  onDateChanged: (value) {},
-                ),
-              ),
-
               Padding(
                 padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0, bottom: 30.0),
                 child: SizedBox(
@@ -479,7 +512,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                         Navigator.pop(context);
                       },
                       child: Text(
-                        "Save",
+                        "Add to Breakfast Meal",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
