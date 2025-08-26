@@ -279,6 +279,399 @@ class _BreakfastScreenState extends State<BreakfastScreen> {
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text("Recommendation for Diet",
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+                SizedBox(
+                  height: 300,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0, bottom: 20.0),
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+
+                        Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color: Color(0XFFE9F0FF),
+                            borderRadius: BorderRadius.circular(26.0),
+                          ),
+                          child: Column(
+                            children: [
+
+                              SizedBox(
+                                height: 30,
+                              ),
+
+                              Padding(
+                                padding: EdgeInsets.only(top: 10.0, right: 10.0),
+                                child: Icon(
+                                  Icons.restaurant,
+                                  size: 66.0,
+                                ),
+                              ),
+
+                              Padding(
+                                padding: EdgeInsets.only(top: 20.0 ,left: 10.0),
+                                child: Text("Honey Pancake",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                              ),
+
+                              Padding(
+                                padding: EdgeInsets.only(left: 10.0),
+                                child: Text("Easy | 30mins | 180kCal",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                              Align(
+                                alignment: Alignment.center,
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 10.0, top: 20.0, right: 10.0, bottom: 10.0),
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      padding: EdgeInsets.zero,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => BreakfastScreen(),),
+                                      );
+                                    },
+                                    child: Ink(
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [Color(0XFF9BC0FF), Color(0XFF93A7FE)],
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ),
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                                        child: Text(
+                                          "View",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(
+                          width: 20,
+                        ),
+
+                        Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color: Color(0XFFF9EBF9),
+                            borderRadius: BorderRadius.circular(26.0),
+                          ),
+                          child: Column(
+                            children: [
+
+                              SizedBox(
+                                height: 30,
+                              ),
+
+                              Padding(
+                                padding: EdgeInsets.only(top: 10.0, right: 10.0),
+                                child: Icon(
+                                  Icons.restaurant,
+                                  size: 66.0,
+                                ),
+                              ),
+
+                              Padding(
+                                padding: EdgeInsets.only(top: 20.0 ,left: 10.0),
+                                child: Text("Canai Bread",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                              ),
+
+                              Padding(
+                                padding: EdgeInsets.only(left: 10.0),
+                                child: Text("Easy | 20mins | 200kCal",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                              Align(
+                                alignment: Alignment.center,
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 10.0, top: 20.0, right: 10.0, bottom: 10.0),
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      padding: EdgeInsets.zero,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => BreakfastScreen(),),
+                                      );
+                                    },
+                                    child: Ink(
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [Color(0XFFF9EBF2), Color(0XFFF9EBF9)],
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ),
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                                        child: Text(
+                                          "View",
+                                          style: TextStyle(color: Colors.pinkAccent),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+
+
+
+
+                        /*
+                        SizedBox(
+                          width: 20,
+                        ),
+
+                        Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color: Color(0XFFE9F0FF),
+                            borderRadius: BorderRadius.circular(26.0),
+                          ),
+                          child: Column(
+                            children: [
+
+                              Padding(
+                                padding: EdgeInsets.only(top: 10.0, right: 10.0),
+                                child: Align(
+                                  alignment: Alignment.topRight,
+                                  child: Icon(
+                                    Icons.restaurant,
+                                    size: 46.0,
+                                  ),
+                                ),
+                              ),
+
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 10.0 ,left: 10.0),
+                                  child: Text("Breakfast",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 10.0),
+                                  child: Text("120+ Foods",
+                                    style: GoogleFonts.poppins(
+                                      textStyle: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.grey
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 10.0, top: 20.0, right: 10.0, bottom: 10.0),
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      padding: EdgeInsets.zero,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                    ),
+                                    onPressed: () {},
+                                    child: Ink(
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [Color(0XFF9BC0FF), Color(0XFF93A7FE)],
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ),
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                                        child: Text(
+                                          "Select",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(
+                          width: 20,
+                        ),
+
+                        Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color: Color(0XFFF9EBF9),
+                            borderRadius: BorderRadius.circular(26.0),
+                          ),
+                          child: Column(
+                            children: [
+
+                              Padding(
+                                padding: EdgeInsets.only(top: 10.0, right: 10.0),
+                                child: Align(
+                                  alignment: Alignment.topRight,
+                                  child: Icon(
+                                    Icons.restaurant,
+                                    size: 46.0,
+                                  ),
+                                ),
+                              ),
+
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 10.0 ,left: 10.0),
+                                  child: Text("Lunch",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 10.0),
+                                  child: Text("130+ Foods",
+                                    style: GoogleFonts.poppins(
+                                      textStyle: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.grey
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Padding(
+                                  padding: EdgeInsets.only(left: 10.0, top: 20.0, right: 10.0, bottom: 10.0),
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      padding: EdgeInsets.zero,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                    ),
+                                    onPressed: () {},
+                                    child: Ink(
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [Color(0XFFE49DD7), Color(0XFFC98FEE)],
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ),
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                                        child: Text(
+                                          "Select",
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),*/
+
+                      ],
+                    ),
+                  ),
+                ),
+
               ],
             ),
           ),
