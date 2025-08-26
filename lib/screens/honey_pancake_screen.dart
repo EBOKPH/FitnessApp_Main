@@ -241,7 +241,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                                     height: 5,
                                   ),
 
-                                  Text("Prepare all of the ingredients that needed",
+                                  Text("Prepare all of the ingredients that needed.",
                                     style: GoogleFonts.poppins(
                                       textStyle: TextStyle(
                                           fontSize: 14,
@@ -302,7 +302,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
 
-                                  Text("Rest at The Toe",
+                                  Text("Step 1",
                                     style: GoogleFonts.poppins(
                                       textStyle: TextStyle(
                                           fontSize: 16,
@@ -316,7 +316,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                                     height: 5,
                                   ),
 
-                                  Text("The basis of this movement is jumping Now, what needs to be considered is that you have to use the tips of your feet.",
+                                  Text("Mix flour, sugar, salt, and baking powder.",
                                     style: GoogleFonts.poppins(
                                       textStyle: TextStyle(
                                           fontSize: 14,
@@ -377,7 +377,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
 
-                                  Text("Adjust Foot Movement",
+                                  Text("Step 3",
                                     style: GoogleFonts.poppins(
                                       textStyle: TextStyle(
                                           fontSize: 16,
@@ -391,7 +391,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                                     height: 5,
                                   ),
 
-                                  Text("Jumping Jack is not just an ordinary jump. But, you also have to pay close attention to leg movements.",
+                                  Text("In a seperate place, mix the eggs and liquid milk until blended",
                                     style: GoogleFonts.poppins(
                                       textStyle: TextStyle(
                                           fontSize: 14,
@@ -449,7 +449,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
 
-                                  Text("Clapping Both Hands",
+                                  Text("Step 4",
                                     style: GoogleFonts.poppins(
                                       textStyle: TextStyle(
                                           fontSize: 16,
@@ -463,7 +463,7 @@ class _HoneyPancakeScreenState extends State<HoneyPancakeScreen> {
                                     height: 5,
                                   ),
 
-                                  Text("This cannot be taken lightly, You see, without realizing it, the clapping of your hands helps you to keep your rhythm while doing the Jumping Jack.",
+                                  Text("Completed Done.",
                                     style: GoogleFonts.poppins(
                                       textStyle: TextStyle(
                                           fontSize: 14,
