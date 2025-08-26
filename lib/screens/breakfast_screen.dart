@@ -1,3 +1,4 @@
+import 'package:fitnestx/screens/honey_pancake_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -690,82 +691,90 @@ class _BreakfastScreenState extends State<BreakfastScreen> {
 
                 Padding(
                   padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
-                  child: Material(
-                    elevation: 3,
-                    borderRadius: BorderRadius.circular(20.0),
-                    color: Colors.white,
-                    child: Padding(
-                      padding: EdgeInsets.all(12.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                  child: InkWell(
+                    child: Material(
+                      elevation: 3,
+                      borderRadius: BorderRadius.circular(20.0),
+                      color: Colors.white,
+                      child: Padding(
+                        padding: EdgeInsets.all(12.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
 
-                          Row(
-                            children: [
+                            Row(
+                              children: [
 
-                              Container(
-                                width: 65,
-                                height: 65,
-                                decoration: BoxDecoration(
-                                  color: Color(0XFFE9F0FF),
-                                  borderRadius: BorderRadius.circular(44.0),
+                                Container(
+                                  width: 65,
+                                  height: 65,
+                                  decoration: BoxDecoration(
+                                    color: Color(0XFFE9F0FF),
+                                    borderRadius: BorderRadius.circular(44.0),
+                                  ),
+                                  child: Icon(
+                                      Icons.restaurant,
+                                      size: 46.0
+                                  ),
                                 ),
-                                child: Icon(
-                                    Icons.restaurant,
-                                    size: 46.0
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 20.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
+                                Padding(
+                                  padding: EdgeInsets.only(left: 20.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
 
-                                    Text("Blueberry Pancake",
-                                      style: GoogleFonts.poppins(
-                                        textStyle: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.black
+                                      Text("Blueberry Pancake",
+                                        style: GoogleFonts.poppins(
+                                          textStyle: TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Text("Medium | 30mins | 230kCal",
-                                      style: GoogleFonts.poppins(
-                                        textStyle: TextStyle(
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.grey
+                                      Text("Medium | 30mins | 230kCal",
+                                        style: GoogleFonts.poppins(
+                                          textStyle: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.grey
+                                          ),
                                         ),
                                       ),
-                                    ),
 
-                                  ],
+                                    ],
+                                  ),
+                                ),
+
+                              ],
+                            ),
+
+                            Container(
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: Colors.grey,
+                                  width: 2.0,
                                 ),
                               ),
-
-                            ],
-                          ),
-
-                          Container(
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
+                              padding: EdgeInsets.all(2.0),
+                              child: Icon(
+                                Icons.arrow_forward_ios_rounded,
                                 color: Colors.grey,
-                                width: 2.0,
+                                size: 15,
                               ),
                             ),
-                            padding: EdgeInsets.all(2.0),
-                            child: Icon(
-                              Icons.arrow_forward_ios_rounded,
-                              color: Colors.grey,
-                              size: 15,
-                            ),
-                          ),
 
-                        ],
+                          ],
+                        ),
                       ),
                     ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HoneyPancakeScreen(),),
+                      );
+                    },
                   ),
                 ),
 
