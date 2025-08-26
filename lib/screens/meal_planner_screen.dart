@@ -1,3 +1,4 @@
+import 'package:fitnestx/screens/breakfast_screen.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -438,7 +439,12 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                     ),
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(builder: (context) => BreakfastScreen(),),
+                                      );
+                                    },
                                     child: Ink(
                                       decoration: BoxDecoration(
                                         gradient: LinearGradient(
