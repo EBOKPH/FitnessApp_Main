@@ -689,7 +689,7 @@ class _BreakfastScreenState extends State<BreakfastScreen> {
                 ),
 
                 Padding(
-                  padding: EdgeInsets.only(left: 20.0, right: 20.0),
+                  padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
                   child: Material(
                     elevation: 3,
                     borderRadius: BorderRadius.circular(20.0),
@@ -721,7 +721,7 @@ class _BreakfastScreenState extends State<BreakfastScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
 
-                                    Text("Salmon Nigiri",
+                                    Text("Blueberry Pancake",
                                       style: GoogleFonts.poppins(
                                         textStyle: TextStyle(
                                             fontSize: 16,
@@ -730,7 +730,7 @@ class _BreakfastScreenState extends State<BreakfastScreen> {
                                         ),
                                       ),
                                     ),
-                                    Text("Today | 7am",
+                                    Text("Medium | 30mins | 230kCal",
                                       style: GoogleFonts.poppins(
                                         textStyle: TextStyle(
                                             fontSize: 12,
@@ -747,9 +747,20 @@ class _BreakfastScreenState extends State<BreakfastScreen> {
                             ],
                           ),
 
-                          Icon(
-                            Icons.notifications_active_outlined,
-                            color: Colors.pinkAccent,
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey,
+                                width: 2.0,
+                              ),
+                            ),
+                            padding: EdgeInsets.all(2.0),
+                            child: Icon(
+                              Icons.arrow_forward_ios_rounded,
+                              color: Colors.grey,
+                              size: 15,
+                            ),
                           ),
 
                         ],
@@ -757,7 +768,7 @@ class _BreakfastScreenState extends State<BreakfastScreen> {
                     ),
                   ),
                 ),
-                
+
               ],
             ),
           ),
