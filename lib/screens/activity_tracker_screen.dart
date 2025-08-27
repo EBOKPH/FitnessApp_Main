@@ -234,7 +234,7 @@ class _ActivityTrackerScreenState extends State<ActivityTrackerScreen> {
                       ),
                       ElevatedButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                          backgroundColor: WidgetStateProperty.all(Colors.blue[200]),
                         ),
                         onPressed: () {},
                         child: Text("Weekly",

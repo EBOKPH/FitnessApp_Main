@@ -91,7 +91,7 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
                       ),
                       ElevatedButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(Color(0xFF97B1FD)),
+                          backgroundColor: WidgetStateProperty.all(Color(0xFF97B1FD)),
                         ),
                         onPressed: () {},
                         child: Text("Weekly",
@@ -175,7 +175,7 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
                           padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                           child: ElevatedButton(
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Color(0xFF97B1FD)),
+                              backgroundColor: WidgetStateProperty.all(Color(0xFF97B1FD)),
                             ),
                             onPressed: () {},
                             child: Text("Check",
@@ -205,7 +205,7 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
                       ),
                       ElevatedButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(Color(0xFF97B1FD)),
+                          backgroundColor: WidgetStateProperty.all(Color(0xFF97B1FD)),
                         ),
                         onPressed: () {},
                         child: Text("Breakfast",

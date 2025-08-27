@@ -207,7 +207,7 @@ class _SleepTrackerScreenState extends State<SleepTrackerScreen> {
                           padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                           child: ElevatedButton(
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                              backgroundColor: WidgetStateProperty.all(Colors.blue[200]),
                             ),
                             onPressed: () {},
                             child: Text("Check",

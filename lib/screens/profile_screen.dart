@@ -125,7 +125,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     elevation: 3,
                     borderRadius: BorderRadius.circular(16),
                     color: Colors.white,
-                    child: Container(
+                    child: SizedBox(
                       width: 100,
                       height: 80,
                       child: Column(
@@ -152,7 +152,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     elevation: 3,
                     borderRadius: BorderRadius.circular(16),
                     color: Colors.white,
-                    child: Container(
+                    child: SizedBox(
                       width: 100,
                       height: 80,
                       child: Column(
@@ -179,7 +179,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     elevation: 3,
                     borderRadius: BorderRadius.circular(16),
                     color: Colors.white,
-                    child: Container(
+                    child: SizedBox(
                       width: 100,
                       height: 80,
                       child: Column(
@@ -211,7 +211,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   elevation: 3,
                   borderRadius: BorderRadius.circular(16),
                   color: Colors.white,
-                  child: Container(
+                  child: SizedBox(
                     width: double.infinity,
                     child: Column(
                       children: [
@@ -383,7 +383,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   elevation: 3,
                   borderRadius: BorderRadius.circular(16),
                   color: Colors.white,
-                  child: Container(
+                  child: SizedBox(
                     width: double.infinity,
                     child: Column(
                       children: [
@@ -451,7 +451,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   elevation: 3,
                   borderRadius: BorderRadius.circular(16),
                   color: Colors.white,
-                  child: Container(
+                  child: SizedBox(
                     width: double.infinity,
                     child: Column(
                       children: [

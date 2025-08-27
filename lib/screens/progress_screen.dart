@@ -190,7 +190,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                                 padding: EdgeInsets.only(top: 20.0),
                                 child: ElevatedButton(
                                   style: ButtonStyle(
-                                    backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                                    backgroundColor: WidgetStateProperty.all(Colors.blue[200]),
                                   ),
                                   onPressed: () {},
                                   child: Text("Learn More",
@@ -250,7 +250,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                           padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                           child: ElevatedButton(
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                              backgroundColor: WidgetStateProperty.all(Colors.blue[200]),
                             ),
                             onPressed: () {},
                             child: Text("Compare",

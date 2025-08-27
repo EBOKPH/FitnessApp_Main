@@ -152,7 +152,7 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
                           padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                           child: ElevatedButton(
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                              backgroundColor: WidgetStateProperty.all(Colors.blue[200]),
                             ),
                             onPressed: () {},
                             child: Text("Check",
@@ -399,7 +399,7 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
                                 padding: EdgeInsets.only(top: 20.0),
                                 child: ElevatedButton(
                                   style: ButtonStyle(
-                                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                                    backgroundColor: WidgetStateProperty.all(Colors.white),
                                   ),
                                   onPressed: () {
                                     Navigator.push(context, MaterialPageRoute(builder: (context) => FullbodyWorkoutScreen()));
@@ -480,7 +480,7 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
                                 padding: EdgeInsets.only(top: 20.0),
                                 child: ElevatedButton(
                                   style: ButtonStyle(
-                                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                                    backgroundColor: WidgetStateProperty.all(Colors.white),
                                   ),
                                   onPressed: () {},
                                   child: Text("View More",
@@ -559,7 +559,7 @@ class _WorkoutTrackerScreenState extends State<WorkoutTrackerScreen> {
                                 padding: EdgeInsets.only(top: 20.0),
                                 child: ElevatedButton(
                                   style: ButtonStyle(
-                                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                                    backgroundColor: WidgetStateProperty.all(Colors.white),
                                   ),
                                   onPressed: () {},
                                   child: Text("View More",

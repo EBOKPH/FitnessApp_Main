@@ -221,13 +221,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       padding: EdgeInsets.only(right: 10),
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: Icon(Icons.email,),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.grey[130],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
                         ),
+                        child: Icon(Icons.email,),
                       ),
                     ),
                     // FaceBook IconButton
@@ -235,13 +235,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       padding: EdgeInsets.only(left: 10),
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: Icon(Icons.facebook,),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.grey[130],
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
                         ),
+                        child: Icon(Icons.facebook,),
                       ),
                     ),
 

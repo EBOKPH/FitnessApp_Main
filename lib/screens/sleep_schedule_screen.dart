@@ -106,7 +106,7 @@ class _SleepScheduleScreenState extends State<SleepScheduleScreen> {
                                 padding: EdgeInsets.only(top: 20.0),
                                 child: ElevatedButton(
                                   style: ButtonStyle(
-                                    backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                                    backgroundColor: WidgetStateProperty.all(Colors.blue[200]),
                                   ),
                                   onPressed: () {},
                                   child: Text("Learn More",

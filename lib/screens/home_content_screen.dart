@@ -184,7 +184,7 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
                         padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                            backgroundColor: WidgetStateProperty.all(Colors.blue[200]),
                           ),
                           onPressed: () {},
                             child: Text("Check",
@@ -575,7 +575,7 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
                     ),
                     ElevatedButton(
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(Colors.blue[200]),
+                        backgroundColor: WidgetStateProperty.all(Colors.blue[200]),
                       ),
                       onPressed: () {},
                       child: Text("Check",
@@ -1216,7 +1216,7 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
                 ),
               ),
 
-              Container(
+              SizedBox(
                 width: double.infinity,
                 height: 100,
               ),
