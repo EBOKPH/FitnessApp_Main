@@ -42,7 +42,7 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
                 ),
               ),
             ),
-            Text("Stefani Wong",
+            Text("EBOKPH",
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                     fontSize: 20,
@@ -79,7 +79,6 @@ class _HomeContentScreenState extends State<HomeContentScreen> {
             ),
           ),
         ],
-
       ),
 
       body: SafeArea(

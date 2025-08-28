@@ -28,25 +28,12 @@ class _SplashScreen2State extends State<SplashScreen2> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Fitnest",
+                Text("K-Fit Kalakal",
                   style: GoogleFonts.poppins(
                     textStyle: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.bold,
                         color: Colors.black
-                    ),
-                  ),
-                ),
-                // Text
-                Padding(
-                  padding: EdgeInsets.only(bottom: 15.0),
-                  child: Text("X",
-                    style: GoogleFonts.poppins(
-                      textStyle: TextStyle(
-                          fontSize: 55,
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xFFB3A7E6) //0xFFB3A7E6 final
-                      ),
                     ),
                   ),
                 ),
@@ -56,7 +43,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
           // Text
           Align(
             alignment: Alignment.center,
-            child: Text("Everybody Can Train",
+            child: Text("Fit Happens",
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                     fontSize: 20,

@@ -40,7 +40,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     ),
                     SizedBox(height: 30,),
                     // Text
-                    Text("Welcome, Stefani",
+                    Text("Welcome, EBOKPH",
                       style: GoogleFonts.poppins(
                         textStyle: TextStyle(
                             fontSize: 30,

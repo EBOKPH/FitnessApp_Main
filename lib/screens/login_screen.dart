@@ -164,19 +164,24 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(builder: (context) => HomeScreen()),
-                          );
+                          // Validate form before navigating
+                          if (_formKey.currentState!.validate()) {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(builder: (context) => HomeScreen()),
+                            );
+                          }
                         },
-                        icon: Icon(Icons.login,color: Colors.white,),
-                        label: Text("Login",
+                        icon: Icon(Icons.login, color: Colors.white),
+                        label: Text(
+                          "Login",
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
                     ),
                   ),
                 ),
+
 
                 Row(
                   children: [

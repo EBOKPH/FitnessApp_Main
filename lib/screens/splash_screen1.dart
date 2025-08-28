@@ -2,6 +2,8 @@ import 'package:fitnestx/screens/splash_screen2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+/* Initial design
+
 class SplashScreen1 extends StatefulWidget {
   const SplashScreen1({super.key});
 
@@ -43,7 +45,7 @@ class _SplashScreen1State extends State<SplashScreen1> {
                     children: [
 
                       // Text
-                      Text("Fitnest",
+                      Text("K-Fit Kalakal",
                         style: GoogleFonts.poppins(
                           textStyle: TextStyle(
                               fontSize: 35,
@@ -52,27 +54,13 @@ class _SplashScreen1State extends State<SplashScreen1> {
                           ),
                         ),
                       ),
-                      // Text
-                      Padding(
-                        padding: EdgeInsets.only(bottom: 15.0),
-                        child: Text("X",
-                          style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
-                                fontSize: 55,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white
-                            ),
-                          ),
-                        ),
-                      ),
-
                     ],
                   ),
                 ),
                 // Text
                 Align(
                   alignment: Alignment.center,
-                  child: Text("Everybody Can Train",
+                  child: Text("Fit Happens",
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                           fontSize: 20,
@@ -127,3 +115,5 @@ class _SplashScreen1State extends State<SplashScreen1> {
     );
   }
 }
+
+ */
