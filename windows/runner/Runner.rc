@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "fitnestx" "\0"
+            VALUE "FileDescription", "kfitkalakal" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "fitnestx" "\0"
+            VALUE "InternalName", "kfitkalakal" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "fitnestx.exe" "\0"
-            VALUE "ProductName", "fitnestx" "\0"
+            VALUE "OriginalFilename", "kfitkalakal.exe" "\0"
+            VALUE "ProductName", "kfitkalakal" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

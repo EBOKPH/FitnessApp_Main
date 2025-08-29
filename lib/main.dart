@@ -1,4 +1,4 @@
-import 'package:fitnestx/screens/splash_screen2.dart';
+import 'package:kfitkalakal/screens/splash_screen/splash_screen_ultra.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'K-Fit Kalakal',
+      title: 'kfitkalakal',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: SplashScreen2(),
+      home: SplashScreenUltra(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -1,10 +1,10 @@
-import 'package:fitnestx/screens/activity_tracker_screen.dart';
-import 'package:fitnestx/screens/add_alarm_screen.dart';
-import 'package:fitnestx/screens/meal_planner_screen.dart';
-import 'package:fitnestx/screens/meal_schedule_screen.dart';
-import 'package:fitnestx/screens/sleep_schedule_screen.dart';
-import 'package:fitnestx/screens/sleep_tracker_screen.dart';
-import 'package:fitnestx/screens/workout_tracker_screen.dart';
+import 'package:kfitkalakal/screens/activity_tracker_screen.dart';
+import 'package:kfitkalakal/screens/add_alarm_screen.dart';
+import 'package:kfitkalakal/screens/meal_planner_screen.dart';
+import 'package:kfitkalakal/screens/meal_schedule_screen.dart';
+import 'package:kfitkalakal/screens/sleep_schedule_screen.dart';
+import 'package:kfitkalakal/screens/sleep_tracker_screen.dart';
+import 'package:kfitkalakal/screens/workout_tracker_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

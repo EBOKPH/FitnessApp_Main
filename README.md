@@ -1,8 +1,4 @@
-# 🏋️‍♂️ FitnestX - Flutter Fitness App UI
-
-**FitnestX** is a modern Flutter application that brings the sleek and elegant **Fitness App UI Kit for Figma** to life. This project showcases beautifully designed screens for fitness tracking—covering workouts, meals, sleep, and user progress—all built with clean code and responsive layouts using Flutter.
-
-## 📱 Completed Screens
+# kfitkalakal
 
 The following UI/UX screens have been fully implemented in Flutter based on the original Figma design:
 
@@ -34,59 +30,4 @@ The following UI/UX screens have been fully implemented in Flutter based on the 
 - **Google Fonts** – Beautiful typography
 - **flutter_svg** – For rendering SVG assets
 
-## 🖼️ UI/UX Source
 
-This project is based on the free design template:  
-[Fitness Free App UI Kit for Figma](https://www.uistore.design/items/fitness-free-app-ui-kit-for-figma/)
-
-## 🚀 Getting Started
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/<your-username>/fitnestx.git
-   cd fitnestx
-````
-
-2. **Install dependencies:**
-
-   ```bash
-   flutter pub get
-   ```
-
-3. **Run the app:**
-
-   ```bash
-   flutter run
-   ```
-
-## 📂 Project Structure (Simplified)
-
-```
-lib/
-├── main.dart
-├── screens/           # All UI screens (as listed above)
-├── widgets/           # Reusable UI components
-├── models/            # Data models (optional)
-└── utils/             # Constants, helpers, themes, etc.
-```
-
-## 📌 To-Do
-
-* [ ] Implement remaining screens
-* [ ] Implement backend/API integration
-* [ ] Add state management (Provider/GetX/etc.)
-* [ ] Add workout, meal, and sleep data logic
-* [ ] Include animations and transitions
-* [ ] Improve navigation and routing
-
-## 🙌 Contributing
-
-Contributions are welcome! Feel free to fork the project and open a pull request with enhancements, bug fixes, or new features.
-
-## 📃 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-> Built with 💙 using Flutter – by \[Arman Gilani]

@@ -1,6 +1,9 @@
-import 'package:fitnestx/screens/login_screen.dart';
+import 'package:kfitkalakal/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
@@ -14,6 +17,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _firstNameController = TextEditingController();
+  final TextEditingController _lastNameController = TextEditingController();
+
   bool _obscureText = true;
   bool isChecked = false;
 
@@ -54,6 +60,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   Padding(
                     padding: EdgeInsets.all(10.0),
                     child: TextFormField(
+                      controller: _firstNameController,
                       keyboardType: TextInputType.name,
                       decoration: InputDecoration(
                         labelText: "First Name",
@@ -76,6 +83,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   Padding(
                     padding: EdgeInsets.all(10.0),
                     child: TextFormField(
+                      controller: _lastNameController,
                       keyboardType: TextInputType.name,
                       decoration: InputDecoration(
                         labelText: "Last Name",
@@ -214,10 +222,35 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                         ),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => LoginScreen(),));
+                        onPressed: () async {
+                          if (_formKey.currentState!.validate() && isChecked) {
+                            final response = await http.post(
+                              Uri.parse("http://172.16.100.160:4000/users/register"),
+                              headers: {"Content-Type": "application/json"},
+                              body: jsonEncode({
+                                "firstName": _firstNameController.text.trim(),
+                                "lastName": _lastNameController.text.trim(),
+                                "email": _emailController.text.trim(),
+                                "password": _passwordController.text.trim(),
+                              }),
+                            );
+
+                            final responseData = jsonDecode(response.body);
+
+                            if (response.statusCode == 200 || response.statusCode == 201) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(content: Text("Registration successful!")),
+                              );
+                              Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(builder: (context) => const LoginScreen()),
+                              );
+                            } else {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text("Error: ${responseData['message'] ?? response.body}")),
+                              );
+                            }
+                          }
                         },
                         child: Text("Register",
                           style: TextStyle(color: Colors.white),

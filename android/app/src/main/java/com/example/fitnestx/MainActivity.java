@@ -1,4 +1,4 @@
-package com.example.fitnestx;
+package com.example.kfitkalakal;
 
 import io.flutter.embedding.android.FlutterActivity;
 

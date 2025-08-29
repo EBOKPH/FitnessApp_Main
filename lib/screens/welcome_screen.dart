@@ -1,4 +1,4 @@
-import 'package:fitnestx/screens/login_screen.dart';
+import 'package:kfitkalakal/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

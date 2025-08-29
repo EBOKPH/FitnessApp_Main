@@ -1,15 +1,15 @@
-import 'package:fitnestx/screens/goal_screen2.dart';
+import 'package:kfitkalakal/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class GoalScreen1 extends StatefulWidget {
-  const GoalScreen1({super.key});
+class GoalScreen3 extends StatefulWidget {
+  const GoalScreen3({super.key});
 
   @override
-  State<GoalScreen1> createState() => _GoalScreen1State();
+  State<GoalScreen3> createState() => _GoalScreen3State();
 }
 
-class _GoalScreen1State extends State<GoalScreen1> {
+class _GoalScreen3State extends State<GoalScreen3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,16 +63,16 @@ class _GoalScreen1State extends State<GoalScreen1> {
                         height: 10.0,
                       ),
                       Image.asset(
-                          "assets/images/Image5.png",
-                          height: 350,
-                          fit: BoxFit.cover,
+                        "assets/images/Image7.png",
+                        height: 350,
+                        fit: BoxFit.cover,
                       ),
                       SizedBox(
                         height: 10.0,
                       ),
 
                       Text(
-                        "Lean & Tone",
+                        "Improve Shape",
                         style: GoogleFonts.poppins(
                           textStyle: TextStyle(
                             fontSize: 16,
@@ -85,8 +85,8 @@ class _GoalScreen1State extends State<GoalScreen1> {
                       Divider(
                         color: Colors.white,
                         thickness: 1.0,
-                        indent: 135.0,
-                        endIndent: 135.0,
+                        indent: 123.0,
+                        endIndent: 123.0,
                       ),
 
                       SizedBox(
@@ -94,7 +94,7 @@ class _GoalScreen1State extends State<GoalScreen1> {
                       ),
 
                       Text(
-                        "I'm skinny fat. Look thin but have",
+                        "I have a low amount of body fat",
                         style: GoogleFonts.poppins(
                           textStyle: TextStyle(
                             fontSize: 16,
@@ -104,7 +104,7 @@ class _GoalScreen1State extends State<GoalScreen1> {
                       ),
 
                       Text(
-                        "no shape. I want to add learn",
+                        "and need / want to build more",
                         style: GoogleFonts.poppins(
                           textStyle: TextStyle(
                             fontSize: 16,
@@ -114,7 +114,7 @@ class _GoalScreen1State extends State<GoalScreen1> {
                       ),
 
                       Text(
-                        "muscle in the right way.",
+                        "muscle.",
                         style: GoogleFonts.poppins(
                           textStyle: TextStyle(
                             fontSize: 16,
@@ -156,7 +156,7 @@ class _GoalScreen1State extends State<GoalScreen1> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => GoalScreen2(),
+                            builder: (context) => WelcomeScreen(),
                           ),
                         );
                       },

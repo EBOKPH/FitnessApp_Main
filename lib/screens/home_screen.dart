@@ -1,9 +1,9 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
-import 'package:fitnestx/screens/home_content_screen.dart';
-import 'package:fitnestx/screens/profile_screen.dart';
-import 'package:fitnestx/screens/progress_screen.dart';
-import 'package:fitnestx/screens/schedule_screen.dart';
-import 'package:fitnestx/screens/search_screen.dart';
+import 'package:kfitkalakal/screens/home_content_screen.dart';
+import 'package:kfitkalakal/screens/profile_screen.dart';
+import 'package:kfitkalakal/screens/progress_screen.dart';
+import 'package:kfitkalakal/screens/schedule_screen.dart';
+import 'package:kfitkalakal/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {

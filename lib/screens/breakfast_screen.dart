@@ -1,4 +1,4 @@
-import 'package:fitnestx/screens/honey_pancake_screen.dart';
+import 'package:kfitkalakal/screens/honey_pancake_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
